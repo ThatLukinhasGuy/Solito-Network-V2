@@ -38,6 +38,10 @@
   <p align="center">
     A rewrite of the Solito Network V1 server
     <br />
+    <br />
+    play.solitomc.nl
+    <br />
+    <br />
     <a href="https://github.com/ComPieter-1/Solito-Network-V2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -111,6 +115,7 @@ Why a rewrite? Because the old network was build from 1.12.2 which had a lot of 
 
 * Requirements
 
+  * That you have Git installed.
   * That you have Java 17 JDK installed & as default Java version.
   * That you have Paper 1.18 downloaded.
   * That you have Waterfall downloaded.
@@ -140,10 +145,10 @@ Why a rewrite? Because the old network was build from 1.12.2 which had a lot of 
 
 - [x] Make server joinable
 - Basic components
-    - [] Chat formatting
-    - [] Permission system
-        - [] Groups
-    - [] Anticheat
+    - [ ] Chat formatting
+    - [ ] Permission system
+        - [ ] Groups
+    - [ ] Anticheat
 
 See the [open issues](https://github.com/ComPieter-1/Solito-Network-V2/issues) for a full list of proposed features (and known issues).
 
