@@ -90,7 +90,7 @@ A minecraft network called Solitomc,
 This github is too help development with Solitomc where everyone can help with the server.
 
 
-[![Watch the video](https://img.youtube.com/vi/bVsTyLj_GCg/hqdefault.jpg)](https://youtu.be/bVsTyLj_GCg)
+[![Watch the video](https://img.youtube.com/vi/cgA_d3DrzSk/hqdefault.jpg)](https://youtu.be/cgA_d3DrzSk)
 
 Why a rewrite? Because the old network was build from 1.12.2 which had a lot of issues and management complications.
 
