@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ComPieter-1/Solito-Network-V2">
+  <a href="https://github.com/compieter-gh/Solito-Network-V2">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -42,12 +42,12 @@
     play.solitomc.nl
     <br />
     <br />
-    <a href="https://github.com/ComPieter-1/Solito-Network-V2"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/compieter-gh/Solito-Network-V2"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ComPieter-1/Solito-Network-V2/issues">Report Bug</a>
+    <a href="https://github.com/compieter-gh/Solito-Network-V2/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ComPieter-1/Solito-Network-V2/issues">Request Feature</a>
+    <a href="https://github.com/compieter-gh/Solito-Network-V2/issues">Request Feature</a>
   </p>
 </div>
 
@@ -124,7 +124,7 @@ Why a rewrite? Because the old network was build from 1.12.2 which had a lot of 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ComPieter-1/Solito-Network-V2.git
+   git clone https://github.com/compieter-gh/Solito-Network-V2.git
    ```
 3. Put Paper in the following folder(s)
    ```sh
@@ -150,7 +150,7 @@ Why a rewrite? Because the old network was build from 1.12.2 which had a lot of 
         - [ ] Groups
     - [ ] Anticheat
 
-See the [open issues](https://github.com/ComPieter-1/Solito-Network-V2/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/compieter-gh/Solito-Network-V2/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,9 +186,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pieter - [ComPieter#0001](https://discord.com/app) - info@solitomc.nl
+Pieter - [compieter#0001](https://discord.com/app) - info@solitomc.nl
 
-Project Link: [https://github.com/ComPieter-1/Solito-Network-V2](https://github.com/ComPieter-1/Solito-Network-V2)
+Project Link: [https://github.com/compieter-gh/Solito-Network-V2](https://github.com/compieter-gh/Solito-Network-V2)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -207,15 +207,15 @@ Project Link: [https://github.com/ComPieter-1/Solito-Network-V2](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ComPieter-1/Solito-Network-V2.svg?style=for-the-badge
-[contributors-url]: https://github.com/ComPieter-1/Solito-Network-V2/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ComPieter-1/Solito-Network-V2.svg?style=for-the-badge
-[forks-url]: https://github.com/ComPieter-1/Solito-Network-V2/network/members
-[stars-shield]: https://img.shields.io/github/stars/ComPieter-1/Solito-Network-V2.svg?style=for-the-badge
-[stars-url]: https://github.com/ComPieter-1/Solito-Network-V2/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ComPieter-1/Solito-Network-V2.svg?style=for-the-badge
-[issues-url]: https://github.com/ComPieter-1/Solito-Network-V2/issues
-[license-shield]: https://img.shields.io/github/license/ComPieter-1/Solito-Network-V2.svg?style=for-the-badge
-[license-url]: https://github.com/ComPieter-1/Solito-Network-V2/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/compieter-gh/Solito-Network-V2.svg?style=for-the-badge
+[contributors-url]: https://github.com/compieter-gh/Solito-Network-V2/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/compieter-gh/Solito-Network-V2.svg?style=for-the-badge
+[forks-url]: https://github.com/compieter-gh/Solito-Network-V2/network/members
+[stars-shield]: https://img.shields.io/github/stars/compieter-gh/Solito-Network-V2.svg?style=for-the-badge
+[stars-url]: https://github.com/compieter-gh/Solito-Network-V2/stargazers
+[issues-shield]: https://img.shields.io/github/issues/compieter-gh/Solito-Network-V2.svg?style=for-the-badge
+[issues-url]: https://github.com/compieter-gh/Solito-Network-V2/issues
+[license-shield]: https://img.shields.io/github/license/compieter-gh/Solito-Network-V2.svg?style=for-the-badge
+[license-url]: https://github.com/compieter-gh/Solito-Network-V2/blob/master/LICENSE.txt
 [discord-shield]: https://discordapp.com/api/guilds/593543971632971797/widget.png?style=shield
 [discord-url]: https://discord.com/invite/Ju7pEqWcCv
