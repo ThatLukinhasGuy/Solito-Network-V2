@@ -43,24 +43,31 @@
 
 **/plugins/SuperTrailsPro/players.yml
 
-##TEMP##
-
 ##luckperms
 
-**/plugins/LuckPerms
+**/plugins/LuckPerms/libs
+**/plugins/LuckPerms/config.yml
 
 ##fastlogin
 
-**/plugins/FastLogin
+**/plugins/FastLogin/config.yml
 
 ##authmereloaded
 
-**/plugins/AuthMe
+**/plugins/AuthMe/backups
+**/plugins/AuthMe/playerdata
+**/plugins/AuthMe/config.yml
+**/plugins/AuthMe/authme.db
+**/plugins/AuthMe/authme.log
+**/plugins/AuthMe/GeoLite2-Country.mmdb
 
 ##skinrestorer
 
-**/plugins/SkinsRestorer
+**/plugins/SkinsRestorer/Players
+**/plugins/SkinsRestorer/Skins
+**/plugins/SkinsRestorer/config.yml
 
+##TEMP##
 ##plan
 
 **/plugins/Plan
