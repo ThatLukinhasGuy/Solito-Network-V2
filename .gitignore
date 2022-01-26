@@ -31,6 +31,46 @@
 **/plugins/FeatherBoard.jar
 **/plugins/SuperTrailsPro.jar
 
+
+**/plugins/CMI/Libs
+**/plugins/CMI/sellLogs
+**/plugins/CMI/GeoIP.dat
+**/plugins/CMI/cmi.sqlite.db
+**/plugins/CMI/skinsCache.yml
+
+**/plugins/FeatherBoard/modules
+**/plugins/FeatherBoard/logs
+
+**/plugins/SuperTrailsPro/players.yml
+
+##TEMP##
+
+##luckperms
+
+**/plugins/LuckPerms
+
+##fastlogin
+
+**/plugins/FastLogin
+
+##authmereloaded
+
+**/plugins/AuthMe
+
+##skinrestorer
+
+**/plugins/SkinsRestorer
+
+##plan
+
+**/plugins/Plan
+
+##buycraft
+
+**/plugins/BuycraftX
+
+##TEMP## #Possibly
+
 ##worldguard
 
 **/plugins/WorldGuard/cache
@@ -59,10 +99,9 @@
 **/plugins/Skript/backups
 **/plugins/Skript/variables.csv
 
-##plan
-
-**/plugins/Plan
+##multiverse-inventories
 
 **/plugins/Multiverse-Inventories/groups
 **/plugins/Multiverse-Inventories/players
 **/plugins/Multiverse-Inventories/worlds
+
