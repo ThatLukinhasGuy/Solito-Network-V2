@@ -77,7 +77,9 @@
 **/plugins/VotingPlugin/votecache.yml
 **/plugins/VotingPlugin/secretkey.key
 
-##TEMP##
+##nuvotifier
+**/plugins/NuVotifier
+
 ##plan
 
 **/plugins/Plan
@@ -85,8 +87,6 @@
 ##buycraft
 
 **/plugins/BuycraftX
-
-##TEMP## #Possibly
 
 ##worldguard
 
