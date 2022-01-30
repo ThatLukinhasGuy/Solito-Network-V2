@@ -36,7 +36,7 @@
 <h3 align="center">Solito Network V2</h3>
 
   <p align="center">
-    A rewrite of the Solito Network V1 server
+    Overhaul of Solito Network V1
     <br />
     <br />
     play.solitomc.nl
@@ -92,7 +92,8 @@ This github is too help development with Solitomc where everyone can help with t
 
 [![Watch the video](https://img.youtube.com/vi/cgA_d3DrzSk/hqdefault.jpg)](https://youtu.be/cgA_d3DrzSk)
 
-Why a rewrite? Because the old network was build from 1.12.2 which had a lot of issues and management complications.
+Why a overhaul? Because the old network was build from 1.12.2 which had a lot of issues and management complications.
+And for it too be open-source so everyone can help.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -143,12 +144,7 @@ Why a rewrite? Because the old network was build from 1.12.2 which had a lot of 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Make server joinable
-- Basic components
-    - [ ] Chat formatting
-    - [ ] Permission system
-        - [ ] Groups
-    - [ ] Anticheat
+- [ ] Make server joinable
 
 See the [open issues](https://github.com/compieter-gh/Solito-Network-V2/issues) for a full list of proposed features (and known issues).
 
@@ -186,7 +182,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Pieter - [compieter#0001](https://discord.com/app) - info@solitomc.nl
+Discord: [compieter#0001](https://discord.com/app)
+
+Email: info@solitomc.nl
 
 Project Link: [https://github.com/compieter-gh/Solito-Network-V2](https://github.com/compieter-gh/Solito-Network-V2)
 

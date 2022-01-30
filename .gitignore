@@ -67,6 +67,16 @@
 **/plugins/SkinsRestorer/Skins
 **/plugins/SkinsRestorer/config.yml
 
+##discordsrv
+**/plugins/DiscordSRV/config.yml
+**/plugins/DiscordSRV/linkedaccounts.json.imported
+
+##votingplugin
+**/plugins/VotingPlugin/bungeeconfig.yml
+**/plugins/VotingPlugin/nonvotedplayerscache.yml
+**/plugins/VotingPlugin/votecache.yml
+**/plugins/VotingPlugin/secretkey.key
+
 ##TEMP##
 ##plan
 
