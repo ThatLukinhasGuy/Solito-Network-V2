@@ -1,0 +1,13 @@
+*/
+plugins/*/*.yml
+plugins/*/*/*.yml
+plugins/*/*/*.sk
+tuinity.yml
+paper.yml
+spigot.yml
+bukkit.yml
+server.properties
+config.yml
+*.sh
+exclude-github.txt
+include-github.txt

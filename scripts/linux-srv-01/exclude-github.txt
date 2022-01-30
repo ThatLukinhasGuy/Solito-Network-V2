@@ -1,0 +1,3 @@
+plugins/CoreProtect/database.db
+plugins/Pl3xMap/web/*
+*
