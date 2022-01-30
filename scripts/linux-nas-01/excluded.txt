@@ -1,0 +1,5 @@
+/root/backups/*
+/etc/netplan
+/etc/fstab
+/etc/mdadm
+/mnt/*
