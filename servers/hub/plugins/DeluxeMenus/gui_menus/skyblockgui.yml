@@ -1,0 +1,28 @@
+menu_title: '&8▪ &b&lSkyblock &8▪ &f(&cWIP&f)'
+open_command:
+- skyblock
+size: 9
+items:
+  glass_pane_filler:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: '&r'
+    slots:
+    - 0-8
+  '1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE4ZjZiMTMxZWY4NDdkOTE2MGU1MTZhNmY0NGJmYTkzMjU1NGQ0MGMxOGE4MTc5NmQ3NjZhNTQ4N2I5ZjcxMCJ9fX0=9
+    data: 2
+    slot: 3
+    display_name: '&aClick to play!'
+    left_click_commands:
+    - '[connect] skyblock'
+    right_click_commands:
+    - '[connect] skyblock'
+    lore:
+    - '&bThis server is currently in development.'
+  '2':
+    material: paper
+    slot: 5
+    display_name: '&aInformation'
+    lore:
+    - '&7This is a wonderful server'
+    - '&8▪ &aClick on the green button to join!'

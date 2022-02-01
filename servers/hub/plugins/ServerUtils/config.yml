@@ -1,0 +1,16 @@
+settings:
+  disable-plugins-command: false
+  check-updates-boot: true
+  check-updates-login: false
+  download-updates-boot: false
+  download-updates-login: false
+  install-updates-boot: false
+  install-updates-login: false
+disabled-commands:
+- plugin:command
+config-version: 1
+unload-after-startup:
+  delay-ticks: 20
+  plugins: []
+hide-plugins-from-plugins-command: []
+protected-plugins: []

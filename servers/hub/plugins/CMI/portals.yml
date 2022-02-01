@@ -1,0 +1,20 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+spawn:
+  solito_rpsmp:
+    Loc: -138.0:1.0:201.0:-136.0:1.0:203.0
+    enabled: true
+    effect: Reddust
+    showParticles: true
+    bungeeServer: staff_smp
+    exactBungeeLocation: true
+    bungeeLocation: world
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands: []

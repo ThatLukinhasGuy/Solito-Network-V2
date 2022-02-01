@@ -1,0 +1,33 @@
+VotingPlugin:
+  Version: 'git-Paper-169 (MC: 1.18.1)'
+  ServiceSites:
+  - LMCS
+  - MinecraftServers.org
+  - Minecraft-MP.com
+  - TopMinecraftServers
+  - MCSL
+PluginVersions:
+  VotingPlugin: '6.7'
+Month: JANUARY
+PrevWeek: 5
+IntColumns:
+- DailyTotal
+- WeeklyTotal
+- DayVoteStreak
+- BestDayVoteStreak
+- WeekVoteStreak
+- BestWeekVoteStreak
+- VotePartyVotes
+- MonthVoteStreak
+- Points
+- HighestDailyTotal
+- AllTimeTotal
+- HighestMonthlyTotal
+- MilestoneCount
+- MonthTotal
+- HighestWeeklyTotal
+- LastMonthTotal
+- BestMonthVoteStreak
+PrevDay: 23
+LastUpdated: 1642949379088
+IgnoreTime: false

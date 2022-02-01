@@ -1,0 +1,21 @@
+Game:
+  location: spawn, -135.544, 27.700, 224.421
+  lines:
+  - '&lFind other Gamemodes on your server compass'
+Admins:
+  location: spawn, -133.531, 34.133, 152.212
+  lines:
+  - These are the &cadmins &fof &3Solito
+Builders:
+  location: spawn, -143.492, 34.253, 152.235
+  lines:
+  - These are the &bbuilders &fof &3Solito
+Mods:
+  location: spawn, -145.700, 34.114, 160.550
+  lines:
+  - These are the &emods &fof &3Solito
+Owners:
+  location: spawn, -123.446, 34.649, 156.709
+  lines:
+  - These are the &4owners
+  - '&fand &9developers &fof &3Solito'

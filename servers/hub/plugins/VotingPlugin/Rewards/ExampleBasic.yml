@@ -1,0 +1,44 @@
+# This is a reward file
+# Define rewards in here (Items, commands, etc)
+# File name is the reward name, without file extention
+# This reward is named "ExampleBasic"
+# That is what you put as a reward for other plugins, like VotingPlugin
+# DO NOT HAVE DUPLICATE NAMES!!
+# 
+# Wiki Page: 
+# https://github.com/Ben12345rocks/AdvancedCore/wiki/Reward-files
+# 
+# This is basic reward file
+# You can have multiple reward files that contain all kinds of rewards
+# Below are some basic things you can have, see the advanced example for more
+# 
+# You can just remove values you don't want (just delete it)
+# If you just want money just have a reward file containg only "Money: 100", for example
+# You can simply copy and paste from here what you want
+# in other reward files, that is the way they are designed
+# 
+# If true:
+# Only allow one item with chance to go through
+# If no chance specificied it will only give the first item
+OnlyOneItemChance: true
+Items:
+  Diamond:
+    Material: DIAMOND
+    Data: 0
+    Amount: 1
+    Name: '&aSpecial Diamond'
+    Lore:
+    - Thx for voting
+    Enchants:
+      unbreaking: 1
+Money: 1000
+EXPLevels: 3
+Commands:
+  Console:
+  - lp user %player% parent set votter
+  - lp user %player% promote ranking
+Messages:
+  Player: '&aMessage on reward'
+  Broadcast: '&aThis is a broadcast'
+RandomCommand:
+- lp user %player% parent set votter

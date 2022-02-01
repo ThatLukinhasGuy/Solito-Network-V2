@@ -1,0 +1,112 @@
+#------------------------------------------
+#			 ParticleText
+#			 By: JDserver
+#------------------------------------------
+options:
+	prefix: &8[&6&lParticleText&8] &r
+	MainColour: &e
+	SecondColour: &7
+	ThirdColour: &c
+	HalfLine: &m---------------------
+	Command: /particletext
+	Aliases: /particletext #You can use /pt here or whatever, if you want shortcuts to the command #Multiple shortcuts /pt, /pt2, /particletextisbae
+	Permission: ParticleText.use
+	PermissionDeny: Unknown command. Type "/help" for help.
+	ConsoleMessages: true
+	Created: Created a particletext with id
+	ErrorMessage: &cError, invalid arguments
+#----------------------------------------------------------------------------------------------------
+#Advanced config (Don't touch, unless you know what you're doing)
+#Will create doc on this soon
+	V: text
+		#For/To/At/On and Var loc
+	Var: at {_p}'s location
+	s: large
+		#VarPrefix is not the name of the skript, this is the database (And not a MySQL)
+		#That particletext uses, don't touch unless you know what the
+		#Variables are. aka Variable prefix
+		#WARNING! Before changing this value (If particletext hasn't run yet) you must delete all values with "/particletext delete all" ingame
+		#Or there will be exsisting data in the database
+	VarPrefix: particletext
+#----------------------------------------------------------------------------------------------------
+
+#DON'T TOUCH ANYTHING BELOW. UNLESS YOU KNOW WHAT YOU'RE DOING, OR THE SKRIPT MIGHT NOT RUN CORRECTLY
+
+#----------------------------------------------------------------------------------------------------
+	Version: 1.2.2
+on load:
+	if {{@VarPrefix}.database::*} is not empty:
+		set {{@VarPrefix}::database::*} to {{@VarPrefix}.database::*}
+	delete {{@VarPrefix}.particles::*} #Temp File
+	delete {{@VarPrefix}::particles::*}
+	add "redstone", "cloud", "crit", "drip_water", "drip_lava", "enchantment_table", "flame", "heart", "note", "villager_happy", "lava", "crit_magic", "fireworks_spark", "villager_angry", "spell", "portal", "barrier", "spell_instant", "spell_witch", "town_aura", "suspended_depth", "slime", "snowball", "snow_shovel", "footstep", "smoke_normal", "smoke_large", "explosion_normal", "explosion_large", "explosion_huge", "water_wake" and "water_splash" to {{@VarPrefix}::particles::*}
+	if {@ConsoleMessages} is true:
+		send "{@prefix} &6Running {@prefix} {@Version}" to console
+on unload:
+	if {@ConsoleMessages} is true:
+		send "{@prefix} &cDisabling {@prefix} {@Version}" to console
+function createText(t: text , id: text , v: text , data: text , p: player , s: text):
+
+	if {{@VarPrefix}::database::*} contains {_id}:
+		if {{@VarPrefix}::%{_p}%.backcheck} is not set:
+			set {{@VarPrefix}::%{_p}%.backcheck} to true
+			delete {{@VarPrefix}::%{_p}%.backcheck}
+	#v = par
+	#V = var
+
+	else if {_data} is "%{_v}%":
+	
+	#Main
+		add {_id} to {{@VarPrefix}::database::*}
+			
+	#space error replacer
+		replace all "_" with " " in {_v}
+			
+	#t = w
+	#Var = main var
+		evaluate "apply the {@V} formation with {@V} ""%{_t}%"" as %{_v}% {@Var} with id ""%{_id}%"" and %{_s}% {@s}"
+		
+		message "{@prefix}{@MainColour}{@Created} &r%{_id}%" to {_p}
+command {@Command} [<text>] [<text>] [<text>] [<text>]:
+	aliases: {@Aliases}
+	permission: {@Permission}
+	permission message: {@PermissionDeny}
+	trigger:
+		if arg 1 is not set:
+			message "{@MainColour}{@HalfLine}&8 {@prefix}{@MainColour}{@HalfLine}"
+			message "{@ThirdColour}{@Command} (text) (id) (particle) (size) {@MainColour}- Id is the particle number"
+			message "{@ThirdColour}{@Command} delete (id) - Use Id number to delete it"
+			message "{@ThirdColour}{@Command} listparticles - Show all particle ID's"
+			message "{@SecondColour}Example {@Command} hello 1 flame 0.15"
+			message "{@SecondColour}Tip: The best size results are between 0.05 and 10"
+			message "Particles:{@MainColour} %{{@VarPrefix}::particles::*}%"
+			message "{@MainColour}{@HalfLine}&8 {@prefix}{@MainColour}{@HalfLine}"
+		else if arg 1 is "delete":
+			if arg 2 is not "all":
+				delete effect "%arg 2%"
+				remove arg 2 from {{@VarPrefix}::database::*}
+				message "{@prefix}{@MainColour}Deleted effect id &r%arg 2%"
+			else:
+				loop {{@VarPrefix}::database::*}:
+					delete effect "%loop-value%"
+				delete {{@VarPrefix}::database::*}
+				message "{@prefix}{@MainColour}All effects deleted"
+		else if arg 1 is "listparticles":
+			message "{@prefix} {@MainColour}Full particle ID list: {@SecondColour}%{{@VarPrefix}::database::*}%"
+		else:
+			if arg 2 is set:
+				if arg 3 is set:
+					if arg 4 is set:
+						loop {{@VarPrefix}::particles::*}:
+							if loop-value is "%arg 3%":
+								set {_arg1} to "%arg 1%"
+								replace all "_" with " " in {_arg1}
+								createText({_arg1} , argument 2 , "%arg 3%" , argument 3 , player , argument 4)
+								stop
+						message "{@prefix} &cError, That is not a specified particle name"
+					else:
+						message "{@prefix} {@ErrorMessage}"
+				else:
+					message "{@prefix} {@ErrorMessage}"
+			else:
+				message "{@prefix} {@ErrorMessage}"

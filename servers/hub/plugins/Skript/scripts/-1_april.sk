@@ -1,0 +1,15 @@
+on join:
+    set {_localtime_time} to placeholder "localtime_time_d/M" from player
+    if {_localtime_time} is "1/4":
+        make console execute "/rg flag __global__ pvp -w spawn allow"
+        if {1_april::%player's uuid%} is true:
+            wait 20 ticks
+            send "&c&l1 April! &f&lKill all the players in the hub :)"
+            stop
+        if {1_april::%player's uuid%} is not set:
+            wait 20 ticks
+            make console execute "/kit 1_april %player%"
+            set {1_april::%player's uuid%} to true
+    if {_localtime_time} is not "1/4":
+        make console execute "/rg flag __global__ pvp -w spawn deny"
+        stop

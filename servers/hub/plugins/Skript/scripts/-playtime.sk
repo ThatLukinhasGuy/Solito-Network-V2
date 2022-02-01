@@ -1,0 +1,4 @@
+command /playtime [<text>]:
+	trigger:
+		send "Playtime this month: %placeholder ""player_server_time_month"" from player%"
+		send "Total playtime: %placeholder ""player_time_active"" from player%"

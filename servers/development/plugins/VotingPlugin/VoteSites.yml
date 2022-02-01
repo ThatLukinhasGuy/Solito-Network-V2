@@ -1,0 +1,72 @@
+# 
+# Reward for any site
+# Similar to AnySiteReward
+# This requires the site to be configured in order to get the reward.
+VoteSites:
+  MinecraftServers_org:
+    Enabled: true
+    ServiceSite: MinecraftServers.org
+    VoteURL: https://minecraftservers.org/server/555179
+    VoteDelay: 24
+    Item:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+  MCSL:
+    Enabled: true
+    ServiceSite: minecraft-server-list.com
+    VoteURL: https://minecraft-server-list.com/server/442242/
+    VoteDelay: 24
+    Item:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+  TopMinecraftServers:
+    Enabled: true
+    ServiceSite: topminecraftservers.org
+    VoteURL: https://topminecraftservers.org/server/6877
+    VoteDelay: 24
+    Item:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+  Minecraft-MP_com:
+    Enabled: true
+    ServiceSite: minecraft-mp.com
+    VoteURL: https://minecraft-mp.com/server-s225674
+    VoteDelay: 16
+    Item:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+  LMCS:
+    Enabled: true
+    ServiceSite: list-minecraft-server.com
+    VoteURL: https://list-minecraft-server.com/server-solito.50
+    VoteDelay: 6
+    Item:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+  mscl:
+    Enabled: true
+    ServiceSite: mscl
+    VoteURL: VoteURL
+    VoteDelay: 24
+    DisplayItem:
+      Material: GRASS
+      Amount: 1
+    Rewards:
+      Messages:
+        Player: '&aThanks for voting on %ServiceSite%!'
+EverySiteReward: Default

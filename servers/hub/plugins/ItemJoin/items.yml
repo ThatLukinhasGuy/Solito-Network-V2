@@ -1,0 +1,46 @@
+# --{ =-=-=-=-=-=-=-=-=-= ItemJoin's Custom Item Configurations, by RockinChaos =-=-=-=-=-=-=-=-=-= }--
+# See the tutorial page for a more in-depth explanation; https://github.com/RockinChaos/ItemJoin/wiki
+# Join the discord for easy plugin support; https://discord.gg/D5FnJ7C
+# 
+# Modifying the Version will cause this file to break and regenerate.
+items-Version: 8
+items-Delay: 2
+items-Overwrite: true
+items-Spamming: false
+items-RestrictCount: false
+items:
+  servergui:
+    id: COMPASS
+    slot: 1
+    name: '&f&lServers'
+    data-value: 0
+    count: 1
+    lore: []
+    interact-right:
+    - 'player: servergui'
+    permission-node: 'itemjoin.servergui'
+    itemflags: inventory-modify, death-drops, self-drops, CreativeBypass
+    
+  infogui:
+    id: BOOK
+    slot: 4
+    name: '&f&lInfo'
+    data-value: 0
+    count: 1
+    lore: []
+    interact-right:
+    - 'player: links'
+    permission-node: 'itemjoin.infogui'
+    itemflags: inventory-modify, death-drops, self-drops, CreativeBypass
+
+  gadgetgui:
+    id: BONE
+    slot: 7
+    name: '&f&lGadgets'
+    data-value: 0
+    count: 1
+    lore: []
+    interact-right:
+    - 'player: gadgetgui'
+    permission-node: 'itemjoin.gadgetgui'
+    itemflags: inventory-modify, death-drops, self-drops, CreativeBypass

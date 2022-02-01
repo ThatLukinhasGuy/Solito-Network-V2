@@ -1,0 +1,4 @@
+# Directly defined reward file. ANY EDITS HERE CAN GET OVERRIDDEN!
+Messages:
+  Player: '&aThanks for voting on %ServiceSite%!'
+DirectlyDefinedReward: true

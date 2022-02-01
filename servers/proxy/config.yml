@@ -1,49 +1,87 @@
+server_connect_timeout: 5000
 listeners:
-- query_port: 25565
-  motd: ''
-  tab_list: GLOBAL_PING
-  query_enabled: false
-  proxy_protocol: false
+- bind_local_address: true
+  force_default_server: true
   forced_hosts: {}
+  host: 0.0.0.0:25565
+  max_players: 1000
+  motd: ''
   ping_passthrough: false
   priorities:
   - hub
-  bind_local_address: true
-  host: 0.0.0.0:25565
-  max_players: 100
+  - hub_fallback
+  proxy_protocol: false
+  query_enabled: false
+  query_port: 25565
+  tab_list: GLOBAL_PING
   tab_size: 60
-  force_default_server: true
 remote_ping_cache: -1
 network_compression_threshold: 256
 permissions:
-  default:
-  - bungeecord.command.server
-  - bungeecord.command.list
   admin:
   - bungeecord.command.alert
   - bungeecord.command.end
   - bungeecord.command.ip
   - bungeecord.command.reload
-log_pings: true
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+log_pings: false
 connection_throttle_limit: 3
-server_connect_timeout: 5000
+prevent_proxy_connections: false
 timeout: 30000
-stats: 399e7fd1-0f63-4240-9672-f256c73bbdde
-player_limit: 100
+player_limit: 1000
 ip_forward: true
-groups:
-  md_5:
-  - admin
+groups: {}
 remote_ping_timeout: 5000
 connection_throttle: 4000
-log_commands: false
-prevent_proxy_connections: false
-online_mode: true
+log_commands: true
+stats: 02511758-a58e-4ad3-9b8d-0833bbb39d95
+online_mode: false
 forge_support: true
-disabled_commands:
-- disabledcommandhere
+disabled_commands: []
 servers:
+  Kingdom:
+    address: 172.18.0.1:25512
+    motd: ''
+    restricted: false
+  building:
+    address: 172.18.0.1:25503
+    motd: ''
+    restricted: true
+  development:
+    address: 172.18.0.1:25501
+    motd: ''
+    restricted: true
   hub:
-    motd: '&b&lSolito &f&lNetwork &c&lV2'
-    address: localhost:25500
+    address: 172.18.0.1:25500
+    motd: ''
+    restricted: false
+  hub_fallback:
+    address: 172.18.0.1:25505
+    motd: ''
+    restricted: false
+  myworld:
+    address: 172.18.0.1:25513
+    motd: ''
+    restricted: false
+  skyblock:
+    address: 172.18.0.1:25507
+    motd: ''
+    restricted: false
+  snapshot:
+    address: 172.18.0.1:25502
+    motd: ''
+    restricted: false
+  staff_smp:
+    address: 172.18.0.1:25504
+    motd: ''
+    restricted: false
+  survival:
+    address: 172.18.0.1:25510
+    motd: ''
+    restricted: false
+  survival_v4:
+    address: 172.18.0.1:25508
+    motd: ''
     restricted: false

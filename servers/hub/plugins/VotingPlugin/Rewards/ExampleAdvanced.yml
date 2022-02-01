@@ -1,0 +1,177 @@
+# This is a reward file
+# Define rewards in here (Items, commands, etc)
+# File name is the reward name, without file extention
+# This reward is named "ExampleAdvanced"
+# That is what you put as a reward for other plugins, like VotingPlugin
+# DO NOT HAVE DUPLICATE NAMES!!
+# 
+# Wiki Page: 
+# https://github.com/Ben12345rocks/AdvancedCore/wiki/Reward-files
+# 
+# You can just remove values you don't want (just delete it)
+# If you just want money just have a reward file containg only "Money: 100", for example
+# Don't use this file as a reward, example only
+# 
+# This is the advanced example, if you only want an item or command then look
+# at the basic example, you can simply copy and paste from here what you want
+# in other reward files, that is the way they are designed
+# 
+# This will delay the reward file from running
+Delayed:
+  Enabled: false
+  Hours: 1
+  Minutes: 0
+  Seconds: 0
+Timed:
+  Enabled: false
+  Hour: 12
+  Minute: 0
+Chance: 40
+RandomCommand: []
+RandomReward:
+- '1000'
+RandomItem:
+  Diamond:
+    Material: DIAMOND
+    Amount: 1
+  Iron:
+    Material: IRON_INGOT
+    Amount: 10
+RequirePermission: false
+Permission: AdvancedCore.Reward.ExampleAdvanced
+Javascript:
+  Enabled: false
+  Expression: ''
+  TrueRewards: []
+  FalseRewards: []
+Javascripts: []
+JavascriptExpression: ''
+Priority: []
+AdvancedPriority:
+  Reward1:
+    Chance: 50
+    Messages:
+      Player: You got first reward
+  Reward2:
+    Chance: 20
+    Messages:
+      Player: You got second reward
+  Fallback:
+    Messages:
+      Player: You got unlucky
+SpecialChance:
+  '5':
+    Commands:
+    - say 5
+  '15':
+    Commands:
+    - say 15
+  '30':
+    Commands:
+    - say 30
+  '50':
+    Commands:
+    - say 50
+EnableChoices: false
+Choices:
+  Diamond:
+    DisplayItem:
+      Name: '&c3 Diamonds'
+      Material: DIAMOND
+      Amount: 3
+    Rewards:
+      Items:
+        Diamond:
+          Material: DIAMOND
+          Amount: 3
+      Messages:
+        Player: '&aYou picked %choice%'
+  Iron:
+    DisplayItem:
+      Name: '&c15 Iron Ingots'
+      Material: IRON_INGOT
+      Amount: 15
+    Rewards:
+      Items:
+        Iron:
+          Material: IRON_INGOT
+          Amount: 15
+      Messages:
+        Player: '&aYou picked %choice%'
+Worlds:
+- world1
+- world2
+RewardType: BOTH
+ForceOffline: false
+Potions:
+  ABSORPTION:
+    Duration: 100
+    Amplifier: 1
+Title:
+  Enabled: false
+  Title: '&cTitle!'
+  SubTitle: '&aSubTitle!'
+  FadeIn: 10
+  ShowTime: 50
+  FadeOut: 10
+BossBar:
+  Enabled: false
+  Message: '&aBossbar'
+  Color: BLUE
+  Style: SOLID
+  Progress: 0.5
+  Delay: 30
+Sound:
+  Enabled: false
+  Sound: BLOCK_ANVIL_USE
+  Volume: 1.0
+  Pitch: 1.0
+Effect:
+  Enabled: false
+  Effect: EXPLOSION_NORMAL
+  Data: 1
+  Particles: 10
+  Radius: 5
+Firework:
+  Enabled: false
+  Power: 2
+  Colors:
+  - BLUE
+  FadeOutColor:
+  - RED
+  Trail: true
+  Flicker: true
+  Types:
+  - BALL_LARGE
+ActionBar:
+  Message: '&cThis is an actionbar!'
+  Delay: 30
+OnlyOneLucky: false
+Lucky:
+  '10':
+    Messages:
+      Player: You were lucky and received an extra $100!
+    Money: 100
+  '50':
+    Messages:
+      Player: You were lucky and received an extra $1000!
+    Money: 1000
+DisplayItem:
+  Material: DIAMOND
+  Name: '&aAdvancedReward'
+  Amount: 1
+Random:
+  Chance: 40
+  PickRandom: true
+  Rewards: []
+  FallBack: []
+Repeat:
+  Enabled: true
+  TimeBetween: 60000
+  Amount: -1
+  RepeatOnStartup: false
+  AutoStop: true
+Commands:
+  Console:
+  - lp user %player% parent set votter
+  - lp user %player% promote ranking

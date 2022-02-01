@@ -1,0 +1,67 @@
+NPCS:
+  '44':
+    Commands:
+    - 1~~~server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '59':
+    Commands:
+    - 1~~~server creative~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '45':
+    Commands:
+    - 1~~~server snapshot~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '61':
+    Commands:
+    - 1~~~lol~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+    - 2~~~lp user BOTAsiann permission set ab.banlist~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '46':
+    Commands:
+    - 1~~~server political_compass~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '42':
+    Commands:
+    - 1~~~server survival_2~~~noPerm~~~BOTH~~~~~~true~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '43':
+    Commands:
+    - 1~~~server skyblock~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '54':
+    Commands:
+    - 1~~~tppos 94 4 -705~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '56':
+    Commands:
+    - 1~~~spawn~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '76':
+    Commands:
+    - 1~~~server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '89':
+    Commands:
+    - 1~~~server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '86':
+    Commands:
+    - 1~~~server creative~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '87':
+    Commands:
+    - 1~~~server snapshot~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '88':
+    Commands:
+    - 1~~~server political_compass~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '91':
+    Commands:
+    - 1~~~server event~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '84':
+    Commands:
+    - 1~~~server survival~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '83':
+    Commands:
+    - 1~~~server skyblock~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '165':
+    Commands:
+    - 1~~~server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+    - 2~~~/server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '159':
+    Commands:
+    - 1~~~/server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+    - 2~~~server anarchy~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '157':
+    Commands:
+    - 1~~~server snapshot~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false
+  '156':
+    Commands:
+    - 1~~~server survival_dev~~~noPerm~~~BOTH~~~~~~false~~~false~~~false~~~0.0~~~0~~~0~~~false~~~false

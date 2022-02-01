@@ -1,0 +1,56 @@
+# Set bungeecoord to true on servers on the network (In VotingPlugin)
+# Set server name in each server related to what it is on bungee
+#
+# MYSQL Required on all setups
+# MYSQL INFO --------------------------
+Host: 'localhost'
+# Default port is 3306
+Port: 3306 
+Database: 'minecraft_votingplugin'
+Username: 'minecraft'
+Password: 'minecraft'
+# Max number of connections
+MaxConnections: 1
+# Maxium size of caching mysql
+# -1 for no limit
+# Affecting this value may affect performance
+MaxSize: -1
+# Table name prefix, for use with mutliple servers
+Prefix: ''
+#UseSSL: true
+
+Debug: false
+# Have a reward on each server
+# If false, will send to online server only
+SendVotesToAllServers: true
+# List of servers the plugin won't send the vote to
+# Uses names from bungeecoord config if not using SOCKETS method
+BlockedServers: []
+
+# What type of bungee setup
+# Requires restart and set on all servers
+# https://github.com/Ben12345rocks/VotingPlugin/wiki/Bungeecoord-Setups
+# Available:
+# SOCKETS 
+# PLUGINMESSAGING 
+# MYSQL
+BungeeMethod: PLUGINMESSAGING
+
+# ----------------------------
+# SOCKET METHOD Only, ignore otherwise
+# ----------------------------
+FallBackServer: hub
+
+# Tell servers to broadcast
+Broadcast: true
+
+# Bungee communication, Add this to each spigot server
+BungeeServer:
+  Host: '0.0.0.0'
+  Port: 1297
+  
+# Bungee communication, add each spigot server here
+SpigotServers:
+  hub:
+    Host: 'localhost'
+    Port: 1298

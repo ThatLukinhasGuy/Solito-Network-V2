@@ -1,0 +1,350 @@
+#  _    _       _       _____           _
+# | |  | |     | |     |  __ \         | |
+# | |__| |_   _| |__   | |__) |_ _ _ __| | _____  _   _ _ __
+# |  __  | | | | '_ \  |  ___/ _` | '__| |/ / _ \| | | | '__|
+# | |  | | |_| | |_) | | |  | (_| | |  |   < (_) | |_| | |
+# |_|  |_|\__,_|_.__/  |_|   \__,_|_|  |_|\_\___/ \__,_|_|
+Messages:
+  Prefix: '&2Parkour>> &r'
+  Break-Disallowed: You are not allowed to break HubParkour Pressure Plates. In order
+    to remove HubParkour Pressure Plates, please delete the parkour with /parkour
+    delete [id].
+  Holograms:
+    Start:
+    - '&9&l&n{parkour-name}'
+    - '&9&lParkour Start'
+    End:
+    - '&9&l&n{parkour-name}'
+    - '&9&lParkour End'
+    Checkpoint:
+    - '&9&l&n{parkour-name}'
+    - '&9&lCheckpoint #{checkpoint}'
+    Leaderboard:
+      Header: '&9&lLeaderboard for {parkour-name}'
+      Line: '&3#{place}&r - &b{player-name}&r - &b{player-time}'
+  Commands:
+    Help:
+    - 'Parkour Help:'
+    - '&a/parkour reset &r- Sends you back to the start.'
+    - '&a/parkour checkpoint &r- Teleports you to the last checkpoint you reached.'
+    - '&a/parkour leave &r- Makes you leave the parkour.'
+    - '&a/parkour leaderboard [parkour] &r- View the leaderboard for specific Parkour.'
+    Help-Admin:
+    - '&a/parkour setup&r - Enter setup mode and begin parkour setup.'
+    - '&a/parkour delete [id] &r- Delete the parkour with the specific ID.'
+    - '&a/parkour list&r - Lists all active parkours.'
+    - '&a/parkour hologram list&r - List all active holograms and their ID''s.'
+    - '&a/parkour hologram create [parkour id]&r - Place a Leaderboard hologram for
+      the specified parkour ID.'
+    - '&a/parkour hologram delete [hologram id]&r - Delete the hologram with the specified
+      ID.'
+    - '&a/parkour removetime [parkour id] [player name]&r - Reset a players leaderboard
+      time.'
+    - '&a/parkour cleartimes [parkour id]&r - Completely reset all times for a specific
+      parkour.'
+    - '&a/parkour edit [parkour id]&r - Enables edit mode to modify information about
+      a parkour.'
+    No-Permission: You do not have permission to execute this command.
+    Not-Valid-Parkour: That is not a valid parkour.
+    Reset:
+      Successful: You have been teleported to the start.
+      Not-Started-Parkour: You must start a parkour in order to reset!
+    Checkpoint:
+      Successful: You have been teleported to your last checkpoint.
+      Not-Started-Parkour: You must start a parkour in order to teleport to a checkpoint!
+    Leaderboard:
+      Message:
+        Header: 'The top times are:'
+        Line: '&a#{place} &r- &a{player-name} &r- &a{player-time} &rseconds.'
+        Footer: ''
+      Not-Valid-Parkour: That is not a valid parkour.
+    Leave:
+      Left: You have left the parkour and your progress has been reset.
+      Not-In-Parkour: You must have started a parkour in order to leave it.
+    Admin:
+      No-Permission: You do not have permission to perform this command.
+      List:
+        Header: 'All active parkours:'
+        Line: '&a#{id} &r- &a{parkour-name} &r- &a{parkour-players} &ractive players.'
+        Footer: ''
+      Delete:
+        Not-Valid-Parkour: That is not a valid parkour ID. If you wish to see a list
+          of all parkours and their IDs, do /parkour list.
+        Success: Parkour deleted successfully.
+        Player-Kicked-From-Parkour: The parkour you were doing was deleted. You have
+          left the parkour.
+      RemoveTime:
+        Not-Valid-Parkour: That is not a valid parkour ID. If you wish to see a list
+          of all parkours and their IDs, do /parkour list.
+        Not-Valid-Player: That player has never attempted this parkour.
+        Success: The players time has been reset!
+      ClearTimes:
+        Not-Valid-Parkour: That is not a valid parkour ID. If you wish to see a list
+          of all parkours and their IDs, do /parkour list.
+        Success: All player times have been reset!
+      Hologram:
+        Must-Have-Holographic-Displays: You must have Holographic Displays installed
+          and holograms enabled in the config.yml in order to use this command.
+        Help:
+        - 'Available sub-commands:'
+        - '&a/parkour hologram list&r - List all active holograms and their ID''s.'
+        - '&a/parkour hologram create [parkour id]&r - Place a Leaderboard hologram
+          for the specified parkour ID.'
+        - '&a/parkour hologram delete [hologram id]&r - Delete the hologram with the
+          specified ID.'
+        List:
+          Header: 'All Active Holograms:'
+          Line: '&aID: {id} &r- &a{parkour-name}'
+          Footer: ''
+        Create:
+          Not-Valid-Parkour: That is not a valid parkour ID. If you wish to see a
+            list of all parkours and their IDs, do /parkour list
+          Not-Enough-Arguments: 'Invalid Arguments. Correct Arguments: &a/parkour
+            hologram create [parkour id]'
+          Successful: Hologram successfully created.
+        Delete:
+          Not-Valid-Hologram: That is not a valid hologram ID. If you wish to see
+            a list of all parkours and their IDs, do /parkour hologram list
+          Not-Enough-Arguments: 'Invalid Arguments. Correct Arguments: &a/parkour
+            hologram delete [hologram id]'
+          Successful: Hologram successfully deleted.
+      Setup:
+        Given-Setup-Stick: You have been given the setup stick.
+        Please-Set-Start: |-
+          Welcome to the parkour setup wizard!
+
+          Before we start, please note that the setup wizard will use your player location when clicking to register locations, not where you look when clicking the stick. When players use commands, they will get teleported facing the direction you are facing when clicking the stick.
+          In order to start, please start off by clicking where you would like your start pressure plate with the stick. Do not worry about placing any pressure plates, the plugin will do that for you! If you wish to cancel at any time, enter 'cancel'.
+        Please-Set-End: Start point set! Now, click where you would like your end
+          pressure plate with your stick.
+        Please-Set-Respawn: End point set! Next, you need to set your respawn point.
+          Click the stick while standing in your respawn point.
+        Please-Set-Checkpoints: Respawn point set! Now, you need to select any checkpoints
+          you want. Click on each checkpoint pressure plate, in order you want them
+          completed, then enter 'done'.
+        Checkpoint-Added: Checkpoint successfully added.
+        Please-Set-Name: Now, you need to set a name for your parkour! Please enter
+          a name for your parkour. It must be one word and not a duplicate. Names
+          are compatible with formatting codes.
+        Please-Set-End-Command: The name has been set! Please now type out your reward
+          command for the end of your parkour. If you don't want one, just type 'none'.
+          Available placeholders are {player-uuid} and {player-name}.
+        Please-Set-Checkpoint-Command: The End Command has been set! Please now type
+          out your reward command for checkpoints of your parkour. This command will
+          only be executed for each reached checkpoint after they finish the parkour
+          to prevent exploitation. If you don't want one, just type 'none'. Available
+          placeholders are {player-uuid} and {player-name}.
+        Name-Too-Long: That name is too long. It must be 1 word.
+        Name-Taken: That name is already taken. Please try again.
+        Invalid-Placement: The place you are trying to setup that point is currently
+          set for a different type of point. If this is a mistake, please type 'cancel'
+          and re-setup your parkour.
+        Setup-Complete: Parkour setup complete!
+        Setup-Cancelled: Parkour setup was cancelled. Any points that were setup have
+          been deleted.
+        Already-Someone-In-Setup: Someone is already setting up a parkour. Please
+          wait for them to finish in order to setup another parkour.
+        Must-Not-Be-In-Parkour: 'You must not be in a parkour in order to set up a
+          parkour. '
+      Edit:
+        Not-Valid-Parkour: That is not a valid parkour. To see a list of valid parkours,
+          do &a/parkour list&r.
+        Someone-Already-Editing: Someone is already editing a parkour. Wait for them
+          to finish before editing another.
+        Already-Editing: You are already editing a parkour. In order to edit another
+          parkour, use 8 in the main edit menu to finish setting up.
+        Not-Valid-Edit: That is not a valid edit. Please type the digit in chat.
+        Entered-Edit-Mode: You have entered edit mode. You have been given the setup
+          stick.
+        Exited-Edit-Mode: You have left edit mode.
+        Choose-Edit:
+        - Please select what you would like to edit about parkour &a{parkour-name}&r.
+          Type the digit in chat.
+        - Please note that split times will be reset for this parkour upon modifications
+          to any parkour points.
+        - '&a1&r - Name'
+        - '&a2&r - End Command'
+        - '&a3&r - Checkpoint Command'
+        - '&a4&r - Start Point'
+        - '&a5&r - End Point'
+        - '&a6&r - Restart Point'
+        - '&a7&r - Checkpoints'
+        - '&a8&r - Exit Edit Mode'
+        Choose-Checkpoint-Edit:
+        - What would you like to edit about checkpoints on parkour &a{parkour-name}&r?
+          Type the digit in chat.
+        - '&a1&r - Delete checkpoints'
+        - '&a2&r - Add Checkpoints'
+        - '&a3&r - Cancel'
+        Enter-New-Name: Please enter a new name for your parkour. It must be one word
+          and not a duplicate. Names are compatible with formatting codes.
+        Name-Set: Your new name has been set!
+        Name-Too-Long: That name is too long! Please try again!
+        Name-Taken: That name is already taken! Try again!
+        Enter-New-End-Command: Please enter a new end command for your parkour. If
+          you don't want one, just type 'none'.
+        End-Command-Set: Your new end command has been set!
+        Enter-New-Checkpoint-Command: Please enter a new checkpoint command for your
+          parkour. If you don't want one, just type 'none'.
+        Checkpoint-Command-Set: Your new checkpoint command has been set!
+        Select-New-Start-Point: Please use the setup stick and select a new start
+          point. This will take the location of where you are standing, and does take
+          into account where you are looking.
+        Start-Point-Set: Your new start point has been set!
+        Select-New-End-Point: Please use the setup stick and select a new end point.
+          This will take the location of where you are standing, and does take into
+          account where you are looking.
+        End-Point-Set: Your new end point has been set!
+        Select-New-Restart-Point: Please use the setup stick and select a new restart
+          point. This will take the location of where you are standing, and does take
+          into account where you are looking.
+        Restart-Point-Set: Your new restart point has been set!
+        Checkpoint-Delete:
+          No-Checkpoints: There are currently no checkpoints to delete! Try adding
+            one instead!
+          Please-Enter-Checkpoint: Which checkpoint number would you like to delete?
+            Type the checkpoint number in chat.
+          Not-Valid-Checkpoint: That is not a valid checkpoint, please try again.
+            If you would like to cancel, type 'cancel'.
+          Success: Checkpoint successfully deleted!
+        Checkpoint-Add:
+          After-Which: What checkpoint should this checkpoint come &a&lafter&r? Type
+            the checkpoint number in chat. If you want this to become the first checkpoint,
+            just type 0.
+          Not-Valid: That checkpoint is not valid. If you want this to become the
+            first checkpoint, just type 0.
+          Select-Checkpoint: Please use the setup stick and select a new checkpoint
+            to add. This will take the location of where you are standing, and does
+            take into account where you are looking.
+          Success: The checkpoint has been successfully added!
+  Parkour:
+    Started: You have started the &a{parkour-name} &rparkour!
+    Restarted: You have restarted the parkour! Your time has been reset to 0!
+    Already-In-Parkour: You are already doing a parkour. If you wish to leave the
+      current parkour and start a new one, do /parkour leave.
+    Teleport: You have been teleported to your last checkpoint.
+    Currently-Being-Edited: This parkour is currently in being modified by an admin.
+      Please wait to attempt this parkour!
+    Checkpoints:
+      Reached:
+        New-Split-Time: You have reached checkpoint &a#{checkpoint}&r in &a{new-time}s&r!
+        Beat-Split-Time: You have reached checkpoint &a#{checkpoint}&r in &a{new-time}s&r
+          and beat your personal best of &a{old-time}s&r!
+        Not-Beat-Split-Time: 'You have reached checkpoint &a#{checkpoint}&r in &a{new-time}s&r
+          (personal best: {old-time}s)!'
+      Not-Started: You must start a parkour in order to reach checkpoints!
+    End:
+      Split-Time:
+        New-Split-Time: You have reached the finish point in &a{new-time}s&r!
+        Beat-Split-Time: You have reached reached the finish point in &a{new-time}s&r
+          and beat your personal best of &a{old-time}s&r!
+        Not-Beat-Split-Time: 'You have reached reached the finish point in &a{new-time}s&r
+          (personal best: {old-time}s)!'
+      Beat-Previous-Personal-Best: You beat your previous record and you managed to
+        complete the &a{parkour-name} &rparkour in &a{time} &rseconds!
+      Not-Beat-Previous-Personal-Best: You didn't beat your previous record, but you
+        managed to complete the &a{parkour-name} &rparkour in &a{time} &rseconds!
+      First-Time: Well done! You completed the &a{parkour-name}&r parkour in &a{time}&r
+        seconds! Your reward will be applied shortly!
+      Not-Started: You must start a parkour in order to finish it.
+      Failed:
+        Fly: You are not allowed to fly while doing the parkour. Parkour failed!
+        Elytra-Use: You are not allowed to use an Elytra while doing the parkour.
+          Parkour failed!
+        Teleportation: You are not allowed to teleport while doing the parkour. Parkour
+          failed!
+        Not-Enough-Checkpoints: You did not reach enough checkpoints, parkour failed!
+        Too-Quick: You completed the parkour too quickly, parkour failed!
+        Parkour-Change: You have started another parkour, parkour failed!
+    Leaderboard:
+      Leaderboard-Place: You are in &a{position}{suffix} place&r for the &a{parkour-name}&r
+        parkour!
+    Action-Bar: '&a&lCurrent Time: &r{current-time} - &a&lParkour: &r{parkour-name}&r
+      - &a&lCurrent Checkpoint: &r#{current-checkpoint}'
+    Cannot-Execute-Commands: You cannot execute commands from other plugins while
+      doing a parkour. To leave your current parkour, do /parkour leave.
+  Time-Format: ss.MMM
+Settings:
+  Holograms:
+    Checkpoint: true
+    End: true
+    Start: true
+  Action-Bar:
+    Enabled: true
+    Update-Interval: 2
+  Must-Complete-All-Checkpoints: true
+  Repeat-Rewards: true
+  Version-Checker:
+    Enabled: true
+  Teleport:
+    On-Fall:
+      Enabled: true
+      Minimum-Distance: 3.0
+    On-Void: true
+    On-Lava: true
+    On-Water: true
+  Cancel-Fall-Damage: false
+  Remove-Potion-Effects: true
+  Stop-Potion-Effects: true
+  Remove-Fly: true
+  Start-When-In-Parkour: false
+  Fail:
+    On-Teleport: true
+    On-Elytra-Use: true
+    On-Toggle-Fly: true
+  Health:
+    Heal-To-Full: true
+    Disable-Damage: true
+  Hunger:
+    Saturate-To-Full: true
+    Disable-Hunger: true
+  Parkour-Gamemode:
+    Enabled: true
+    Gamemode: ADVENTURE
+  Parkour-Items:
+    Prevent-Item-Pickup: true
+    Clear-Inventory-On-Parkour-Start: true
+    Checkpoint:
+      Slot: 4
+      Item: LIGHT_WEIGHTED_PRESSURE_PLATE
+      Item-Data: 0
+      Name: '&aTeleport to Last Checkpoint'
+    Reset:
+      Slot: 5
+      Item: OAK_DOOR
+      Item-Data: 0
+      Name: '&cReset'
+    Cancel:
+      Slot: 6
+      Item: RED_BED
+      Item-Data: 0
+      Name: '&cCancel'
+  Leaderboard:
+    Limit: 10
+  Database:
+    Type: SQLite
+    Details:
+      MySQL:
+        Hostname: localhost
+        Port: '3306'
+        Database: HubParkour
+        Username: root
+        Password: ''
+      SQLite:
+        File-Name: hp-storage.db
+  Pressure-Plates:
+    Start: OAK_PRESSURE_PLATE
+    Checkpoint: LIGHT_WEIGHTED_PRESSURE_PLATE
+    End: HEAVY_WEIGHTED_PRESSURE_PLATE
+  Exploit-Prevention:
+    Remove-Potion-Effects: true
+    Remove-Fly: true
+    Stop-Potion-Effects: true
+    Block-Commands: true
+    Block-Stacker: true
+    Checkpoint-Rewards-Everytime: false
+    Fail:
+      On-Teleport: true
+  Incompatibility-Workarounds:
+    VoidSpawn:
+      Enabled: false
