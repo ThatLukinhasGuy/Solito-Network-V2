@@ -11,6 +11,7 @@
 
 #Log File & Paths
 ROOT_PATH="/mnt/volume1/NetBackup"
+HOSTNAME=$(hostname)
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/logs/${DATE} #/mnt/volume1/NetBackup/logs/2021_07_14_03_10_PM_
