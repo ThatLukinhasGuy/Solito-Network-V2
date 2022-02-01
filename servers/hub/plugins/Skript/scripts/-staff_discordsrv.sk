@@ -1,0 +1,14 @@
+on login:
+    while player is online:
+        wait 5 seconds
+        if player has permission "discordsrv.sync.staff":
+            set {_discordsrv_user_islinked} to placeholder "discordsrv_user_islinked" from player
+            if {_discordsrv_user_islinked} is "yes":
+                stop
+            if {_discordsrv_user_islinked} is "no":
+                send "&cLinking your discord is required as staff! (/discord link)"
+                send "&cIf your on Lunar Client then please switch to a regular client while linking"
+            else:
+                stop
+        else:
+            stop

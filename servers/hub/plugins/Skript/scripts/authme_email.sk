@@ -1,0 +1,13 @@
+on join:
+    loop all players:
+        while player is online:
+            wait 5 seconds
+            set {_fastlogin_status} to placeholder "fastlogin_status" from loop-player
+            if {_fastlogin_status} is "Premium":
+                set {authme_email_set::%player%} to true
+                stop
+            if {_fastlogin_status} is "Unknown":
+                if {authme_email_set::%player%} is not set:
+                    send "&3Please add your email to your account with the command: /email add <yourEmail> <confirmEmail>" to loop-player
+                if {authme_email_set::%player%} is true:
+                    stop

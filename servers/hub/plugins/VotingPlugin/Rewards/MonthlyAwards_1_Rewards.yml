@@ -1,0 +1,4 @@
+Commands:
+  Console:
+  - lp user %player% parent set votter
+  - lp user %player% promote ranking

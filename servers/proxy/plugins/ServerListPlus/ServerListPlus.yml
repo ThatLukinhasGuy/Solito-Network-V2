@@ -1,0 +1,179 @@
+#      _____                     __    _     _   _____ _
+#     |   __|___ ___ _ _ ___ ___|  |  |_|___| |_|  _  | |_ _ ___
+#     |__   | -_|  _| | | -_|  _|  |__| |_ -|  _|   __| | | |_ -|
+#     |_____|___|_|  \_/|___|_| |_____|_|___|_| |__|  |_|___|___|
+# 
+# ServerListPlus v3.4.8 - http://git.io/slp
+
+# More information is available in the Wiki: http://git.io/slp-wiki
+
+
+# This is the section where you can customize your server status ping!
+#  - Default is the section for the status used when the player name is unknown.
+#    Personalized is used if the client has already joined the server once.
+#    Use %player% as placeholder for the player's name.
+# 
+# Features:
+#  - Description (MotD): A short status message for your server, max. 2 lines.
+#  - Players:
+#    - Hover: The player hover message that is displayed if you hover the player count.
+#    - Slots: Custom player slot formatting, see http://git.io/slp-slots
+#  - Favicon:
+#    - Use multiple server icons or the player's head as favicon, see http://git.io/oMhJlg
+#    - Possible favicon sources: Files, Folders, URLs, Heads, Helms, Encoded
+# 
+#  More features are explained in the Wiki: http://git.io/slp-config
+# 
+# Usage:
+#  - Add multiple entries for random messages.
+#  - Save the file with valid UTF-8 encoding for special characters.
+#  - Available placeholders:
+#    - Player name: %player%
+#    - Player count: %online%, %max%, %online@server% %online@world%
+#    - Random online player name: %random_player%
+--- !Status
+Default:
+  Description:
+    - |-
+      &f        &f&m---------&f< &b&lSolito &f&lNetwork&f >&m---------
+      &f                            Loading...
+#Blue/White
+    #Theme 1
+
+    # #Theme 2
+    # - |-
+    #   &f     &f<&m----------&f[ &b&lSolito&f&lNetwork&f ]&m----------&f>
+    #   &f         &l &350% &9SALE &f>> &b&nshop.solitomc.nl
+      
+    # #Theme 3
+    # - |-
+    #   &f   &l   &b&lServer&f&lName &f>> &b&l1.8&f-&b&l1.15 &f>> &9&lJoin Now&f!
+    #   &f  &b&lNEW &f>> &9Season 2 Survival  &f+ &bAnarchy and more! &f!
+#Red/Orange
+    #Theme 1
+    # - |-
+    #   &f        &8&m---------&8< &b&lSolito&f&lNetwork&f >&m---------
+    #   &f       &l   &650% &4SALE &8>> &c&nshop.solitomc.nl
+      
+    # #Theme 2
+    # - |-
+    #   &f     &8<&m----------&8[ &c&lServer&4&lName&8 ]&m----------&8>
+    #   &f         &l &650% &4SALE &8>> &c&nshop.solitomc.nl
+      
+    # #Theme 3
+    # - |-
+    #   &f   &l   &c&lServer&4&lName &8>> &c&l1.8&8-&c&l1.15 &8>> &4&lJoin Now&8&l!
+    #   &f  &c&lNEW &8>> &4Season 4 Out &8+ &cPrisons Beta &8+ &650% &4SALE&8!
+  Players:
+    Hover:
+#Blue/White
+    #Theme 1
+    - |-
+      &f<&m-------&f[ &b&lSolito &f&lNetwork&f ]&m-------&f>
+      
+      &9VERSION &f>> &b1.8&f-&b1.18
+      &9ONLINE &f>> &b%online%&f/&b%max%
+      
+      &9WEBSITE &f>> &bwww.solitomc.nl
+      &9STORE &f>> &bwww.solitomc.nl/shop
+      &9DISCORD &f>> &bwww.solitomc.nl/discord
+      
+      &f<&m-------&f[ &b&lSolito &f&lNetwork&f ]&m-------&f>
+      
+    #Theme 2
+    # - |-
+    #   &f<&m-------&f[ &b&lSolito&f&lNetwork&f ]&m-------&f>
+      
+    #   &9VERSION &f>> &b1.8&f-&b1.15
+    #   &9ONLINE &f>> &b%online%&f/&b%max%
+      
+    #   &9WEBSITE &f>> &bwww.solitomc.nl
+    #   &9STORE &f>> &bstore.solitomc.nl
+    #   &9DISCORD &f>> &bdiscord.solito.com
+      
+    #   &f<&m-------&f[ &b&lSolito&f&lNetwork&f ]&m-------&f>
+      
+    #Theme 3
+    # - |-
+    #   &f&m------------------------------
+      
+    #   &9VERSION &f>> &b1.8&f-&b1.15
+    #   &9ONLINE &f>> &b%online%&f/&b%max%
+      
+    #   &9WEBSITE &f>> &bwebsite.servername.com
+    #   &9STORE &f>> &bstore.servername.com
+    #   &9DISCORD &f>> &bdiscord.servername.com
+      
+    #   &f&m------------------------------
+#Red/Orange
+    #Theme 1
+    # - |-
+    #   &8&m--------&8< &c&lServer&4&lName&8 >&m--------
+      
+    #   &4VERSION &8>> &c1.8&8-&c1.17
+    #   &4ONLINE &8>> &c%online%&8/&c%max%
+      
+    #   &4WEBSITE &8>> &cwebsite.servername.com
+    #   &4STORE &8>> &cstore.servername.com
+    #   &4DISCORD &8>> &cdiscord.servername.com
+      
+    #   &8&m--------&8< &c&lServer&4&lName&8 >&m--------
+      
+    #Theme 2
+    # - |-
+    #   &8<&m-------&8[ &c&lServer&4&lName&8 ]&m-------&8>
+      
+    #   &4VERSION &8>> &c1.8&8-&c1.15
+    #   &4ONLINE &8>> &c%online%&8/&c%max%
+      
+    #   &4WEBSITE &8>> &cwebsite.servername.com
+    #   &4STORE &8>> &cstore.servername.com
+    #   &4DISCORD &8>> &cdiscord.servername.com
+      
+    #   &8<&m-------&8[ &c&lServer&4&lName&8 ]&m-------&8>
+      
+    #Theme 3
+    # - |-
+    #   &8&m------------------------------
+      
+    #   &4VERSION &8>> &c1.8&8-&c1.15
+    #   &4ONLINE &8>> &c%online%&8/&c%max%
+      
+    #   &4WEBSITE &8>> &cwebsite.servername.com
+    #   &4STORE &8>> &cstore.servername.com
+    #   &4DISCORD &8>> &cdiscord.servername.com
+      
+    #   &8&m------------------------------
+
+# Stats: Enable/disable sending plugin statistics.
+# PlayerTracking: Enable/disable tracking of player names to their IP-Addresses.
+#   - Persistence can be disabled with the toggle in the Storage section.
+# Samples: Toggle using multiple player infos for the player hover message.
+#     May prevent the annoying ... and x more ... message for bigger servers
+#     DynamicPlayers is special and aligns the number with the number of
+#     random players used in placeholders.
+# Unknown: Placeholder replacement if the real value is unknown.
+# Favicon: Options for the creation / downloading of favicons:
+#  - RecursiveFolderSearch: Also search for favicons in sub directories.
+#  - SkinSource: The URL to get the Minecraft Skins from. (%s -> player name)
+#  - ResizeStrategy: The strategy used to resize too small or too big favicons.
+#      NONE (keep them as is, will probably fail), SCALE (scale them to the correct size)
+--- !Plugin
+Stats: true
+PlayerTracking:
+  Enabled: false
+  Storage: !JSONStorage
+    Enabled: true
+    SaveDelay: 5m
+Samples:
+  Multiple: true
+  DynamicPlayers: false
+Unknown:
+  PlayerName: player
+  PlayerCount: ???
+  Date: ???
+Favicon:
+  Timeout: 10s
+  RecursiveFolderSearch: true
+  ResizeStrategy: SCALE
+

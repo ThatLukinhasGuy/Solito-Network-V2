@@ -1,0 +1,124 @@
+menu_title: '&8Servers &c[Staff]'
+open_command: servergui_staff
+open_requirement:
+  requirements:
+    staff_hasperm:
+      type: has permission
+      permission: 'servergui.staff'
+size: 27
+update_interval: 3
+items:
+  'glass_pane_filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: '&r'
+    slots: 
+    - 0-26
+    priority: 100
+
+  'development_server':
+    material: TNT
+    slot: 11
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_172.18.0.1:25501%'
+          output: '&aOnline'
+    display_name: "&8▪ &b&lDevelopment &8▪"
+    lore:
+    - '&f%pinger_players_172.18.0.1:25501%&7/&f%pinger_max_172.18.0.1:25501% &7playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Server Version: &f%pinger_version_172.18.0.1:25501%'
+    - '&7Supports: %solito_supported_protocol_versions%'
+    left_click_commands:
+    - '[close]'
+    - '[connect] development'
+  'development_offline':
+    material: BARRIER
+    slot: 11
+    priority: 3
+    display_name: "&8▪ &b&lDevelopment &8▪ &4[offline]"
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true
+
+  'staff_smp_server':
+    material: WHEAT
+    slot: 13
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_172.18.0.1:25504%'
+          output: '&aOnline'
+    display_name: "&8▪ &b&lStaff SMP &8▪"
+    lore:
+    - '&f%pinger_players_172.18.0.1:25504%&7/&f%pinger_max_172.18.0.1:25504% &7playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Server Version: &f%pinger_version_172.18.0.1:25504%'
+    - '&7Supports: %solito_supported_protocol_versions%'
+    left_click_commands:
+    - '[close]'
+    - '[connect] staff_smp'
+  'staff_smp_offline':
+    material: BARRIER
+    slot: 13
+    priority: 3
+    display_name: "&8▪ &b&lStaff SMP &8▪ &4[offline]"
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true
+    
+  'building_server':
+    material: GLASS
+    slot: 15
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_172.18.0.1:25503%'
+          output: '&aOnline'
+    display_name: "&8▪ &b&lBuilding &8▪"
+    lore:
+    - '&f%pinger_players_172.18.0.1:25503%&7/&f%pinger_max_172.18.0.1:25503% &7playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Server Version: &f%pinger_version_172.18.0.1:25503%'
+    - '&7Supports: %solito_supported_protocol_versions%'
+    left_click_commands:
+    - '[close]'
+    - '[connect] building'
+  'building_offline':
+    material: BARRIER
+    slot: 15
+    priority: 3
+    display_name: "&8▪ &b&lBuilding &8▪ &4[offline]"
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true

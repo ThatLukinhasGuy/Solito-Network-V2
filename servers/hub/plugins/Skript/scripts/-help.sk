@@ -1,0 +1,3 @@
+command /help [<text>]:
+	trigger:
+		send "&a&nhttps://solitomc.nl/docs"

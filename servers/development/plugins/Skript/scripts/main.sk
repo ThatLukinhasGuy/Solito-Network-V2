@@ -1,0 +1,98 @@
+options:
+	skript_version: 1.5.0-(14-11-2021)
+	skript_prefix: &b&lSolito &f&lNetwork &r»
+	skript_command_prefix: &b&lSolito &f&lNetwork
+	supported_protocol_versions: &f1.8 - 1.18
+	discord_link: https://discord.gg/Ju7pEqWcCv
+	server_ip: "play.solitomc.nl"
+	website_ip: "www.solitomc.nl"
+	shop_ip: "shop.solitomc.nl"
+
+on placeholderapi placeholder request for the prefix "solito":
+	if the identifier is "supported_protocol_versions":
+		set the result to "{@supported_protocol_versions}"
+	if the identifier is "discord_link":
+		set the result to "{@discord_link}"
+	if the identifier is "server_ip":
+		set the result to {@server_ip}
+	if the identifier is "website_ip":
+		set the result to {@website_ip}
+	if the identifier is "shop_ip":
+		set the result to {@shop_ip}
+	if the identifier is "rank":
+		set {_vault_rank} to placeholder "vault_rank" from player
+		if {_vault_rank} is "default":
+			set the result to "&c✘"
+		else:
+			set {_vault_prefix} to placeholder "vault_prefix" from player
+			set the result to "%{_vault_prefix}%"
+	if the identifier is "account_status":
+		set {_fastlogin_status} to placeholder "fastlogin_status" from player
+		if {_fastlogin_status} is "Unknown":
+			set the result to "&cCracked"
+		if {_fastlogin_status} is "Premium":
+			set the result to "&aPremium"
+
+command /solito [<text>] [<text>]:
+	description: Command for solito's main skript.
+	usage: /solito (commands)
+	executable by: players
+	trigger:
+		if arg-1 is not set:
+			send "&f&l&m-------------|&r {@skript_command_prefix} &f&l&m|-------------"
+			send ""
+			send "/solito announcements on/off"
+			send "/solito rules"
+			send "/solito hacks"
+			send "/solito debug (WIP)"
+			send "/solito version"
+			send ""
+			send "&f&l&m---------------------------------"
+		
+		if arg-1 is "rules":
+			send "&f&l&m----------|&r {@skript_command_prefix}&f (Rules) &l&m|----------"
+			send ""
+			send "&f&nThese rules apply to non"
+			send "&f&nAnarchy servers only."
+			send ""
+			send "&fDon't hack"
+			send "&fDon't grief"
+			send "&fDon't swear"
+			send ""
+			send "&f&l&m---------------------------------"
+
+		if arg-1 is "hacks":
+			kick the player due to "{@skript_prefix}&fYeah in anarchy you dumbass.%newline%%newline%Join using &nanarchy.solitomc.nl &rfor anarchy."
+			broadcast "{@skript_prefix} &f%player% Typed ""/solito hacks"" And got kicked."
+
+		if arg-1 is "version":
+			send "{@skript_prefix} &fSkript version is: {@skript_version}"
+			set {_server_version} to placeholder "server_version" from player
+			send "{@skript_prefix} &fServer version is: %{_server_version}%"
+			set {_player_version} to placeholder "viaversion_player_protocol_version" from player
+			send "{@skript_prefix} &fPlayer version is: %{_player_version}%"
+			send "{@skript_prefix} &fSupported versions: {@supported_protocol_versions}"
+
+command /discord [<text>]:
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "link":
+				make player execute command "discordsrv link"
+			if arg-1 is "unlink":
+				make player execute command "discordsrv unlink"
+			if arg-1 is "linked":
+				make player execute command "discordsrv linked"
+			if arg-1 is "reload":
+				make player execute command "discordsrv reload"
+			if arg-1 is "help":
+				send "<link:https://github.com/bart7782/Solito-docs/blob/main/Commands/discord_linking.md>&nClick here for help on linking your account<reset>"
+			if arg-1 is "?":
+				send "<link:https://github.com/bart7782/Solito-docs/blob/main/Commands/discord_linking.md>&nClick here for help on linking your account<reset>"
+		else:
+			send "&b&n<link:{@discord_link}>{@discord_link}<reset>"
+
+command /hub:
+	aliases: /lobby
+	executable by: players
+	trigger:
+		connect player to "hub"

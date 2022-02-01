@@ -1,0 +1,20 @@
+command /banzana:
+	executable by: players
+	trigger:
+		loop 100 times:
+			Set {_time} To a random integer between 15 And 30
+			Set {_end} To "%{_time}% seconds" parsed as a time span
+			Wait {_end}
+			make player execute command "pmirror play fakeplayer"
+			Set {_time} To a random integer between 5 And 15
+			Set {_end} To "%{_time}% seconds" parsed as a time span
+			Wait {_end}
+			make player execute command "pmirror play fakeplayer2"
+			Set {_time} To a random integer between 10 And 15
+			Set {_end} To "%{_time}% seconds" parsed as a time span
+			Wait {_end}
+			make player execute command "pmirror play fakeplayer3"
+			Set {_time} To a random integer between 10 And 30
+			Set {_end} To "%{_time}% seconds" parsed as a time span
+			Wait {_end}
+			make player execute command "pmirror play fakeplayer4"

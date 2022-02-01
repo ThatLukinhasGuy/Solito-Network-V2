@@ -1,0 +1,34 @@
+VotingPlugin:
+  Version: 'git-Paper-408 (MC: 1.17.1)'
+  ServiceSites:
+  - MinecraftServers.org
+  - LMCS
+  - Minecraft-MP.com
+  - TopMinecraftServers
+  - crafty.gg
+  - MCSL
+PluginVersions:
+  VotingPlugin: '6.7'
+PrevDay: 1
+PrevWeek: 6
+Month: FEBRUARY
+IntColumns:
+- DailyTotal
+- WeeklyTotal
+- DayVoteStreak
+- BestDayVoteStreak
+- WeekVoteStreak
+- BestWeekVoteStreak
+- VotePartyVotes
+- MonthVoteStreak
+- Points
+- HighestDailyTotal
+- AllTimeTotal
+- HighestMonthlyTotal
+- MilestoneCount
+- MonthTotal
+- HighestWeeklyTotal
+- LastMonthTotal
+- BestMonthVoteStreak
+LastUpdated: 1643755617844
+IgnoreTime: false

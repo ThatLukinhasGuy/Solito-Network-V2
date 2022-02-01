@@ -1,0 +1,41 @@
+parkour:
+  World: spawn
+  DisplayName: bart7782
+  Skin: bart7782
+  Linked: false
+banzana:
+  World: spawn
+  DisplayName: bart7782
+  Skin: bart7782
+  Linked: false
+pieter:
+  World: spawn
+  DisplayName: ComPieter
+  Skin: ComPieter
+  Linked: false
+fakeplayer:
+  World: spawn
+  DisplayName: Solito
+  Skin: FakePlayer
+  Linked: false
+fakeplayer2:
+  World: spawn
+  DisplayName: Solito
+  Skin: playerfake
+  Linked: false
+fakeplayer3:
+  World: spawn
+  DisplayName: Solito
+  Skin: Ossiedestroyer69
+  Linked: false
+fakeplayer4:
+  World: spawn
+  DisplayName: Solito
+  Skin: beancake5523
+  Linked: false
+greeter:
+  World: spawn
+  DisplayName: Greeter
+  Skin: beancake5523
+  Linked: true
+  LinkID: 9904

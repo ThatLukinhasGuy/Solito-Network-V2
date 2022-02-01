@@ -1,0 +1,556 @@
+# This is the BannerBoard configuration
+# Make sure to always make a backup of this file before making any changes!
+# Made by BigTeddy98
+# 
+# Every BannerBoard has some internal settings stored in this file.
+# Please do not make any changes to whatever is in the internal section.
+
+lastUsedId: 57
+idrange:
+  startid: 22000
+  amount: 5000
+color_palette: color_palette_v1_16_R1.bc
+skinserver: http://www.skinrender.com:2798/
+skinrender_key: CJ3OS1EHVBQMMLBRRT3190F07
+bannerboards:
+  '2':
+    internal:
+      frames:
+      - world_-30.0_88.0_-36.0_0.0_0.0
+      - world_-30.0_87.0_-36.0_0.0_0.0
+      - world_-30.0_86.0_-36.0_0.0_0.0
+      - world_-30.0_85.0_-36.0_0.0_0.0
+      - world_-30.0_84.0_-36.0_0.0_0.0
+      - world_-30.0_88.0_-37.0_0.0_0.0
+      - world_-30.0_87.0_-37.0_0.0_0.0
+      - world_-30.0_86.0_-37.0_0.0_0.0
+      - world_-30.0_85.0_-37.0_0.0_0.0
+      - world_-30.0_84.0_-37.0_0.0_0.0
+      - world_-30.0_88.0_-38.0_0.0_0.0
+      - world_-30.0_87.0_-38.0_0.0_0.0
+      - world_-30.0_86.0_-38.0_0.0_0.0
+      - world_-30.0_85.0_-38.0_0.0_0.0
+      - world_-30.0_84.0_-38.0_0.0_0.0
+      - world_-30.0_88.0_-39.0_0.0_0.0
+      - world_-30.0_87.0_-39.0_0.0_0.0
+      - world_-30.0_86.0_-39.0_0.0_0.0
+      - world_-30.0_85.0_-39.0_0.0_0.0
+      - world_-30.0_84.0_-39.0_0.0_0.0
+      - world_-30.0_88.0_-40.0_0.0_0.0
+      - world_-30.0_87.0_-40.0_0.0_0.0
+      - world_-30.0_86.0_-40.0_0.0_0.0
+      - world_-30.0_85.0_-40.0_0.0_0.0
+      - world_-30.0_84.0_-40.0_0.0_0.0
+      - world_-30.0_88.0_-41.0_0.0_0.0
+      - world_-30.0_87.0_-41.0_0.0_0.0
+      - world_-30.0_86.0_-41.0_0.0_0.0
+      - world_-30.0_85.0_-41.0_0.0_0.0
+      - world_-30.0_84.0_-41.0_0.0_0.0
+      facing: WEST
+      width: 6
+      height: 5
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - TEXT -text TEST %name% TEST -size 12 -font DejaVu Sans -color 255,255,255
+        -strokeColor 0,0,0 -strokeThickness 0 -xOffset 10 -yOffset 70
+  '20':
+    internal:
+      frames:
+      - build_thijmendekok_-121.0_32.0_158.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src code.png -width 128 -height 128
+  '21':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_32.0_154.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '36':
+    internal:
+      frames:
+      - build_thijmendekok_-125.0_31.0_157.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '37':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_31.0_156.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src server_front.png -width 128 -height 128
+  '38':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_32.0_156.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src server_front.png -width 128 -height 128
+  '41':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_33.0_161.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '42':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_33.0_160.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_front.png -width 128 -height 128
+  '44':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_33.0_159.0_0.0_0.0
+      facing: SOUTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '45':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_32.0_157.0_0.0_0.0
+      - build_thijmendekok_-122.0_31.0_157.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 2
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 256
+  '46':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_32.0_155.0_0.0_0.0
+      facing: SOUTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '47':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_31.0_154.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_bottom.png -width 128 -height 128
+  '48':
+    internal:
+      frames:
+      - build_thijmendekok_-124.0_31.0_153.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '49':
+    internal:
+      frames:
+      - build_thijmendekok_-124.0_32.0_152.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_front.png -width 128 -height 128
+  '50':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_32.0_153.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '51':
+    internal:
+      frames:
+      - build_thijmendekok_-123.0_34.0_153.0_0.0_0.0
+      facing: UP
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '52':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_33.0_154.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_bottom.png -width 128 -height 128
+  '53':
+    internal:
+      frames:
+      - build_thijmendekok_-122.0_33.0_156.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '56':
+    internal:
+      frames:
+      - EventMap_613.0_30.0_-26.0_0.0_0.0
+      - EventMap_613.0_29.0_-26.0_0.0_0.0
+      - EventMap_613.0_28.0_-26.0_0.0_0.0
+      - EventMap_613.0_27.0_-26.0_0.0_0.0
+      - EventMap_613.0_26.0_-26.0_0.0_0.0
+      - EventMap_613.0_25.0_-26.0_0.0_0.0
+      - EventMap_613.0_24.0_-26.0_0.0_0.0
+      - EventMap_613.0_23.0_-26.0_0.0_0.0
+      - EventMap_613.0_22.0_-26.0_0.0_0.0
+      - EventMap_613.0_21.0_-26.0_0.0_0.0
+      - EventMap_613.0_20.0_-26.0_0.0_0.0
+      - EventMap_613.0_19.0_-26.0_0.0_0.0
+      - EventMap_613.0_18.0_-26.0_0.0_0.0
+      - EventMap_613.0_17.0_-26.0_0.0_0.0
+      - EventMap_614.0_30.0_-26.0_0.0_0.0
+      - EventMap_614.0_29.0_-26.0_0.0_0.0
+      - EventMap_614.0_28.0_-26.0_0.0_0.0
+      - EventMap_614.0_27.0_-26.0_0.0_0.0
+      - EventMap_614.0_26.0_-26.0_0.0_0.0
+      - EventMap_614.0_25.0_-26.0_0.0_0.0
+      - EventMap_614.0_24.0_-26.0_0.0_0.0
+      - EventMap_614.0_23.0_-26.0_0.0_0.0
+      - EventMap_614.0_22.0_-26.0_0.0_0.0
+      - EventMap_614.0_21.0_-26.0_0.0_0.0
+      - EventMap_614.0_20.0_-26.0_0.0_0.0
+      - EventMap_614.0_19.0_-26.0_0.0_0.0
+      - EventMap_614.0_18.0_-26.0_0.0_0.0
+      - EventMap_614.0_17.0_-26.0_0.0_0.0
+      - EventMap_615.0_30.0_-26.0_0.0_0.0
+      - EventMap_615.0_29.0_-26.0_0.0_0.0
+      - EventMap_615.0_28.0_-26.0_0.0_0.0
+      - EventMap_615.0_27.0_-26.0_0.0_0.0
+      - EventMap_615.0_26.0_-26.0_0.0_0.0
+      - EventMap_615.0_25.0_-26.0_0.0_0.0
+      - EventMap_615.0_24.0_-26.0_0.0_0.0
+      - EventMap_615.0_23.0_-26.0_0.0_0.0
+      - EventMap_615.0_22.0_-26.0_0.0_0.0
+      - EventMap_615.0_21.0_-26.0_0.0_0.0
+      - EventMap_615.0_20.0_-26.0_0.0_0.0
+      - EventMap_615.0_19.0_-26.0_0.0_0.0
+      - EventMap_615.0_18.0_-26.0_0.0_0.0
+      - EventMap_615.0_17.0_-26.0_0.0_0.0
+      - EventMap_616.0_30.0_-26.0_0.0_0.0
+      - EventMap_616.0_29.0_-26.0_0.0_0.0
+      - EventMap_616.0_28.0_-26.0_0.0_0.0
+      - EventMap_616.0_27.0_-26.0_0.0_0.0
+      - EventMap_616.0_26.0_-26.0_0.0_0.0
+      - EventMap_616.0_25.0_-26.0_0.0_0.0
+      - EventMap_616.0_24.0_-26.0_0.0_0.0
+      - EventMap_616.0_23.0_-26.0_0.0_0.0
+      - EventMap_616.0_22.0_-26.0_0.0_0.0
+      - EventMap_616.0_21.0_-26.0_0.0_0.0
+      - EventMap_616.0_20.0_-26.0_0.0_0.0
+      - EventMap_616.0_19.0_-26.0_0.0_0.0
+      - EventMap_616.0_18.0_-26.0_0.0_0.0
+      - EventMap_616.0_17.0_-26.0_0.0_0.0
+      - EventMap_617.0_30.0_-26.0_0.0_0.0
+      - EventMap_617.0_29.0_-26.0_0.0_0.0
+      - EventMap_617.0_28.0_-26.0_0.0_0.0
+      - EventMap_617.0_27.0_-26.0_0.0_0.0
+      - EventMap_617.0_26.0_-26.0_0.0_0.0
+      - EventMap_617.0_25.0_-26.0_0.0_0.0
+      - EventMap_617.0_24.0_-26.0_0.0_0.0
+      - EventMap_617.0_23.0_-26.0_0.0_0.0
+      - EventMap_617.0_22.0_-26.0_0.0_0.0
+      - EventMap_617.0_21.0_-26.0_0.0_0.0
+      - EventMap_617.0_20.0_-26.0_0.0_0.0
+      - EventMap_617.0_19.0_-26.0_0.0_0.0
+      - EventMap_617.0_18.0_-26.0_0.0_0.0
+      - EventMap_617.0_17.0_-26.0_0.0_0.0
+      - EventMap_618.0_30.0_-26.0_0.0_0.0
+      - EventMap_618.0_29.0_-26.0_0.0_0.0
+      - EventMap_618.0_28.0_-26.0_0.0_0.0
+      - EventMap_618.0_27.0_-26.0_0.0_0.0
+      - EventMap_618.0_26.0_-26.0_0.0_0.0
+      - EventMap_618.0_25.0_-26.0_0.0_0.0
+      - EventMap_618.0_24.0_-26.0_0.0_0.0
+      - EventMap_618.0_23.0_-26.0_0.0_0.0
+      - EventMap_618.0_22.0_-26.0_0.0_0.0
+      - EventMap_618.0_21.0_-26.0_0.0_0.0
+      - EventMap_618.0_20.0_-26.0_0.0_0.0
+      - EventMap_618.0_19.0_-26.0_0.0_0.0
+      - EventMap_618.0_18.0_-26.0_0.0_0.0
+      - EventMap_618.0_17.0_-26.0_0.0_0.0
+      - EventMap_619.0_30.0_-26.0_0.0_0.0
+      - EventMap_619.0_29.0_-26.0_0.0_0.0
+      - EventMap_619.0_28.0_-26.0_0.0_0.0
+      - EventMap_619.0_27.0_-26.0_0.0_0.0
+      - EventMap_619.0_26.0_-26.0_0.0_0.0
+      - EventMap_619.0_25.0_-26.0_0.0_0.0
+      - EventMap_619.0_24.0_-26.0_0.0_0.0
+      - EventMap_619.0_23.0_-26.0_0.0_0.0
+      - EventMap_619.0_22.0_-26.0_0.0_0.0
+      - EventMap_619.0_21.0_-26.0_0.0_0.0
+      - EventMap_619.0_20.0_-26.0_0.0_0.0
+      - EventMap_619.0_19.0_-26.0_0.0_0.0
+      - EventMap_619.0_18.0_-26.0_0.0_0.0
+      - EventMap_619.0_17.0_-26.0_0.0_0.0
+      - EventMap_620.0_30.0_-26.0_0.0_0.0
+      - EventMap_620.0_29.0_-26.0_0.0_0.0
+      - EventMap_620.0_28.0_-26.0_0.0_0.0
+      - EventMap_620.0_27.0_-26.0_0.0_0.0
+      - EventMap_620.0_26.0_-26.0_0.0_0.0
+      - EventMap_620.0_25.0_-26.0_0.0_0.0
+      - EventMap_620.0_24.0_-26.0_0.0_0.0
+      - EventMap_620.0_23.0_-26.0_0.0_0.0
+      - EventMap_620.0_22.0_-26.0_0.0_0.0
+      - EventMap_620.0_21.0_-26.0_0.0_0.0
+      - EventMap_620.0_20.0_-26.0_0.0_0.0
+      - EventMap_620.0_19.0_-26.0_0.0_0.0
+      - EventMap_620.0_18.0_-26.0_0.0_0.0
+      - EventMap_620.0_17.0_-26.0_0.0_0.0
+      - EventMap_621.0_30.0_-26.0_0.0_0.0
+      - EventMap_621.0_29.0_-26.0_0.0_0.0
+      - EventMap_621.0_28.0_-26.0_0.0_0.0
+      - EventMap_621.0_27.0_-26.0_0.0_0.0
+      - EventMap_621.0_26.0_-26.0_0.0_0.0
+      - EventMap_621.0_25.0_-26.0_0.0_0.0
+      - EventMap_621.0_24.0_-26.0_0.0_0.0
+      - EventMap_621.0_23.0_-26.0_0.0_0.0
+      - EventMap_621.0_22.0_-26.0_0.0_0.0
+      - EventMap_621.0_21.0_-26.0_0.0_0.0
+      - EventMap_621.0_20.0_-26.0_0.0_0.0
+      - EventMap_621.0_19.0_-26.0_0.0_0.0
+      - EventMap_621.0_18.0_-26.0_0.0_0.0
+      - EventMap_621.0_17.0_-26.0_0.0_0.0
+      - EventMap_622.0_30.0_-26.0_0.0_0.0
+      - EventMap_622.0_29.0_-26.0_0.0_0.0
+      - EventMap_622.0_28.0_-26.0_0.0_0.0
+      - EventMap_622.0_27.0_-26.0_0.0_0.0
+      - EventMap_622.0_26.0_-26.0_0.0_0.0
+      - EventMap_622.0_25.0_-26.0_0.0_0.0
+      - EventMap_622.0_24.0_-26.0_0.0_0.0
+      - EventMap_622.0_23.0_-26.0_0.0_0.0
+      - EventMap_622.0_22.0_-26.0_0.0_0.0
+      - EventMap_622.0_21.0_-26.0_0.0_0.0
+      - EventMap_622.0_20.0_-26.0_0.0_0.0
+      - EventMap_622.0_19.0_-26.0_0.0_0.0
+      - EventMap_622.0_18.0_-26.0_0.0_0.0
+      - EventMap_622.0_17.0_-26.0_0.0_0.0
+      - EventMap_623.0_30.0_-26.0_0.0_0.0
+      - EventMap_623.0_29.0_-26.0_0.0_0.0
+      - EventMap_623.0_28.0_-26.0_0.0_0.0
+      - EventMap_623.0_27.0_-26.0_0.0_0.0
+      - EventMap_623.0_26.0_-26.0_0.0_0.0
+      - EventMap_623.0_25.0_-26.0_0.0_0.0
+      - EventMap_623.0_24.0_-26.0_0.0_0.0
+      - EventMap_623.0_23.0_-26.0_0.0_0.0
+      - EventMap_623.0_22.0_-26.0_0.0_0.0
+      - EventMap_623.0_21.0_-26.0_0.0_0.0
+      - EventMap_623.0_20.0_-26.0_0.0_0.0
+      - EventMap_623.0_19.0_-26.0_0.0_0.0
+      - EventMap_623.0_18.0_-26.0_0.0_0.0
+      - EventMap_623.0_17.0_-26.0_0.0_0.0
+      - EventMap_624.0_30.0_-26.0_0.0_0.0
+      - EventMap_624.0_29.0_-26.0_0.0_0.0
+      - EventMap_624.0_28.0_-26.0_0.0_0.0
+      - EventMap_624.0_27.0_-26.0_0.0_0.0
+      - EventMap_624.0_26.0_-26.0_0.0_0.0
+      - EventMap_624.0_25.0_-26.0_0.0_0.0
+      - EventMap_624.0_24.0_-26.0_0.0_0.0
+      - EventMap_624.0_23.0_-26.0_0.0_0.0
+      - EventMap_624.0_22.0_-26.0_0.0_0.0
+      - EventMap_624.0_21.0_-26.0_0.0_0.0
+      - EventMap_624.0_20.0_-26.0_0.0_0.0
+      - EventMap_624.0_19.0_-26.0_0.0_0.0
+      - EventMap_624.0_18.0_-26.0_0.0_0.0
+      - EventMap_624.0_17.0_-26.0_0.0_0.0
+      - EventMap_625.0_30.0_-26.0_0.0_0.0
+      - EventMap_625.0_29.0_-26.0_0.0_0.0
+      - EventMap_625.0_28.0_-26.0_0.0_0.0
+      - EventMap_625.0_27.0_-26.0_0.0_0.0
+      - EventMap_625.0_26.0_-26.0_0.0_0.0
+      - EventMap_625.0_25.0_-26.0_0.0_0.0
+      - EventMap_625.0_24.0_-26.0_0.0_0.0
+      - EventMap_625.0_23.0_-26.0_0.0_0.0
+      - EventMap_625.0_22.0_-26.0_0.0_0.0
+      - EventMap_625.0_21.0_-26.0_0.0_0.0
+      - EventMap_625.0_20.0_-26.0_0.0_0.0
+      - EventMap_625.0_19.0_-26.0_0.0_0.0
+      - EventMap_625.0_18.0_-26.0_0.0_0.0
+      - EventMap_625.0_17.0_-26.0_0.0_0.0
+      facing: NORTH
+      width: 13
+      height: 14
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src Solito_Logo.png -width 1664 -height 1792
+  '57':
+    internal:
+      frames:
+      - EventMap_607.0_29.0_124.0_0.0_0.0
+      - EventMap_607.0_28.0_124.0_0.0_0.0
+      - EventMap_607.0_27.0_124.0_0.0_0.0
+      - EventMap_607.0_26.0_124.0_0.0_0.0
+      - EventMap_607.0_25.0_124.0_0.0_0.0
+      - EventMap_607.0_24.0_124.0_0.0_0.0
+      - EventMap_607.0_23.0_124.0_0.0_0.0
+      - EventMap_607.0_22.0_124.0_0.0_0.0
+      - EventMap_607.0_21.0_124.0_0.0_0.0
+      - EventMap_606.0_29.0_124.0_0.0_0.0
+      - EventMap_606.0_28.0_124.0_0.0_0.0
+      - EventMap_606.0_27.0_124.0_0.0_0.0
+      - EventMap_606.0_26.0_124.0_0.0_0.0
+      - EventMap_606.0_25.0_124.0_0.0_0.0
+      - EventMap_606.0_24.0_124.0_0.0_0.0
+      - EventMap_606.0_23.0_124.0_0.0_0.0
+      - EventMap_606.0_22.0_124.0_0.0_0.0
+      - EventMap_606.0_21.0_124.0_0.0_0.0
+      - EventMap_605.0_29.0_124.0_0.0_0.0
+      - EventMap_605.0_28.0_124.0_0.0_0.0
+      - EventMap_605.0_27.0_124.0_0.0_0.0
+      - EventMap_605.0_26.0_124.0_0.0_0.0
+      - EventMap_605.0_25.0_124.0_0.0_0.0
+      - EventMap_605.0_24.0_124.0_0.0_0.0
+      - EventMap_605.0_23.0_124.0_0.0_0.0
+      - EventMap_605.0_22.0_124.0_0.0_0.0
+      - EventMap_605.0_21.0_124.0_0.0_0.0
+      - EventMap_604.0_29.0_124.0_0.0_0.0
+      - EventMap_604.0_28.0_124.0_0.0_0.0
+      - EventMap_604.0_27.0_124.0_0.0_0.0
+      - EventMap_604.0_26.0_124.0_0.0_0.0
+      - EventMap_604.0_25.0_124.0_0.0_0.0
+      - EventMap_604.0_24.0_124.0_0.0_0.0
+      - EventMap_604.0_23.0_124.0_0.0_0.0
+      - EventMap_604.0_22.0_124.0_0.0_0.0
+      - EventMap_604.0_21.0_124.0_0.0_0.0
+      - EventMap_603.0_29.0_124.0_0.0_0.0
+      - EventMap_603.0_28.0_124.0_0.0_0.0
+      - EventMap_603.0_27.0_124.0_0.0_0.0
+      - EventMap_603.0_26.0_124.0_0.0_0.0
+      - EventMap_603.0_25.0_124.0_0.0_0.0
+      - EventMap_603.0_24.0_124.0_0.0_0.0
+      - EventMap_603.0_23.0_124.0_0.0_0.0
+      - EventMap_603.0_22.0_124.0_0.0_0.0
+      - EventMap_603.0_21.0_124.0_0.0_0.0
+      - EventMap_602.0_29.0_124.0_0.0_0.0
+      - EventMap_602.0_28.0_124.0_0.0_0.0
+      - EventMap_602.0_27.0_124.0_0.0_0.0
+      - EventMap_602.0_26.0_124.0_0.0_0.0
+      - EventMap_602.0_25.0_124.0_0.0_0.0
+      - EventMap_602.0_24.0_124.0_0.0_0.0
+      - EventMap_602.0_23.0_124.0_0.0_0.0
+      - EventMap_602.0_22.0_124.0_0.0_0.0
+      - EventMap_602.0_21.0_124.0_0.0_0.0
+      - EventMap_601.0_29.0_124.0_0.0_0.0
+      - EventMap_601.0_28.0_124.0_0.0_0.0
+      - EventMap_601.0_27.0_124.0_0.0_0.0
+      - EventMap_601.0_26.0_124.0_0.0_0.0
+      - EventMap_601.0_25.0_124.0_0.0_0.0
+      - EventMap_601.0_24.0_124.0_0.0_0.0
+      - EventMap_601.0_23.0_124.0_0.0_0.0
+      - EventMap_601.0_22.0_124.0_0.0_0.0
+      - EventMap_601.0_21.0_124.0_0.0_0.0
+      - EventMap_600.0_29.0_124.0_0.0_0.0
+      - EventMap_600.0_28.0_124.0_0.0_0.0
+      - EventMap_600.0_27.0_124.0_0.0_0.0
+      - EventMap_600.0_26.0_124.0_0.0_0.0
+      - EventMap_600.0_25.0_124.0_0.0_0.0
+      - EventMap_600.0_24.0_124.0_0.0_0.0
+      - EventMap_600.0_23.0_124.0_0.0_0.0
+      - EventMap_600.0_22.0_124.0_0.0_0.0
+      - EventMap_600.0_21.0_124.0_0.0_0.0
+      - EventMap_599.0_29.0_124.0_0.0_0.0
+      - EventMap_599.0_28.0_124.0_0.0_0.0
+      - EventMap_599.0_27.0_124.0_0.0_0.0
+      - EventMap_599.0_26.0_124.0_0.0_0.0
+      - EventMap_599.0_25.0_124.0_0.0_0.0
+      - EventMap_599.0_24.0_124.0_0.0_0.0
+      - EventMap_599.0_23.0_124.0_0.0_0.0
+      - EventMap_599.0_22.0_124.0_0.0_0.0
+      - EventMap_599.0_21.0_124.0_0.0_0.0
+      - EventMap_598.0_29.0_124.0_0.0_0.0
+      - EventMap_598.0_28.0_124.0_0.0_0.0
+      - EventMap_598.0_27.0_124.0_0.0_0.0
+      - EventMap_598.0_26.0_124.0_0.0_0.0
+      - EventMap_598.0_25.0_124.0_0.0_0.0
+      - EventMap_598.0_24.0_124.0_0.0_0.0
+      - EventMap_598.0_23.0_124.0_0.0_0.0
+      - EventMap_598.0_22.0_124.0_0.0_0.0
+      - EventMap_598.0_21.0_124.0_0.0_0.0
+      facing: SOUTH
+      width: 10
+      height: 9
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src Solito_Logo.png -width 1280 -height 1152

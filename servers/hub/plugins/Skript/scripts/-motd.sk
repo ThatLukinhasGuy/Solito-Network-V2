@@ -1,0 +1,76 @@
+on join:
+	wait 15 ticks
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send "&f&m|--*--------------------------------------*--|"
+	send ""
+	send " &fWelcome to &b&lSolito &fNetwork"
+	send ""
+	send " &fDonate: &b<link:https://shop.solitomc.nl>shop.solitomc.nl<reset>"
+	send " &fShop: &b<link:https://shop.solitomc.nl>shop.solitomc.nl<reset>"
+	send " &fDiscord: &b<link:https://discord.gg/Ju7pEqWcCv>discord.gg/Ju7pEqWcCv<reset>"
+	send " &fWebsite: &b<link:https://www.solitomc.nl>www.solitomc.nl<reset>"
+	send ""
+	send "&f&m|--*--------------------------------------*--|"
+	player has played on this server before
+	if {announcement.toggle} is not set:
+		set {announcement.toggle} to true
+	if {announcement.toggle} is true:
+		wait 5 seconds
+		send "&f&m|------&r &c&lAnnouncement from ComPieter! &f&m------|"
+		send "&fWe have now moved anarchy/creative anarchy to"
+		send "&fa seperate proxy/IP: anarchy.solitomc.nl"
+		send ""
+		send ""
+		send "&cWere removing it soon from this proxy!"
+		send "&cOn 01/07/21 it will be removed so change over to that ip!"
+		send ""
+		send ""
+		send "&f&m|-------------------------------------------|"
+		if {announcement.seen} is true:
+			wait 3 seconds
+			send "&cToo disable announcements: /solito announcements off"
+			wait 3 seconds
+			send "We now have a subreddit! <link:https://reddit.com/r/solito>https://reddit.com/r/solito<reset>"
+		else:
+			set {announcement.seen} to true
+	if {announcement.toggle} is false:
+		wait 5 seconds
+		send "&cYou have annoucments disabled too enable announcements:"
+		send "&c/solito announcements on"
+	# if world is "world":
+	# 	send "&cSorry it seems this world has been blown up by two owner's"
+	# 	wait 5 seconds
+	# 	send title "Loading new hub........" to player for 2 seconds
+	# 	wait 5 seconds
+	# 	send title "......." to player for 3 seconds
+	# 	wait 5 seconds
+	# 	send title "OOPS! not found!" to player for 2 seconds
+	# set {_player_version} to placeholder "viaversion_player_protocol_version" from player
+	# if {_player_version} is "1.17":
+	# 	send "&c&lPlease use 1.16.5 if you have any issues with the snapshot support."
+	# else:
+	# 	stop
+
+on command "/solito announcements off":
+	set {announcement.toggle} to false
+	send "&cYou disabled announcements."
+
+on command "/solito announcements on":
+	set {announcement.toggle} to true
+	send "&cYou enabled announcements."

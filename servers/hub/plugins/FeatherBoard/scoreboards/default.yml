@@ -1,0 +1,74 @@
+########################
+# Created by TheHumax  #
+########################
+
+settings:
+
+  label-color: "&e"
+  show-health: true
+  priority: 10
+
+script-pre: |
+    if (settings['show-health'] == "true"){
+        board.getMeta().setSetting("enable-health","");
+    }else{
+        board.getMeta().setSetting("enable-health","|disabled|");
+    }
+
+lines:
+    title:
+      text:
+      - '&e◈ &b&lSolito &f&lNetwork &e◈'
+      interval: 100
+    placeholder_1:
+      text:
+      - ' '
+      interval: 100
+    personal:
+      text:
+      - '&e» &b&lPersonal'
+      interval: 100
+    name:
+      text:
+      - '&e◈ &f&lName: &b%player_name%'
+      interval: 100
+    status:
+      text:
+      - '&e◈ &f&lStatus: %solito_account_status%'
+      interval: 20
+    rank:
+      text:
+      - '&e◈ &f&lRank: %solito_rank% &6☄'
+      interval: 100
+    votes:
+      text:
+      - "&e◈ &f&lVote's: &b%votingplugin_total_daily% &c♠"
+      interval: 100
+    placeholder_2:
+      text:
+      - ' '
+      interval: 100
+    network:
+      text:
+      - "&e» &b&lNetwork"
+      interval: 100
+    hub:
+      text:
+      - '&e◈ &f&lHub: &b%cmi_server_online%'
+      interval: 20
+    survival_v3:
+      text:
+      - '&e◈ &f&lSurvival V3: &b%bungee_survival%'
+      interval: 20
+    survival_v4:
+      text:
+      - '&e◈ &f&lSurvival V4: &b%bungee_survival_v4%'
+      interval: 20
+    placeholder:
+      text:
+      - ' '
+      interval: 100
+    name_ip:
+      text:
+      - '&b&l%solito_server_ip%     '
+      interval: 20

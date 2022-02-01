@@ -1,0 +1,14 @@
+Newhub:
+  Location: build_thijmendekok;-135.56;30.0;182.49;-2.39;-4.19
+  DisName: Thijmen_hub
+  Creator: 8fc1cb89-f5ff-404d-abd7-e9baf8e64de2
+rules:
+  Location: world;-2.78;92.0;-30.11;215.56;-9.45
+  Creator: 8fc1cb89-f5ff-404d-abd7-e9baf8e64de2
+Projects:
+  Location: world;3.9;92.0;-29.57;161.86;-3.59
+  HideFromList: true
+  Creator: 8fc1cb89-f5ff-404d-abd7-e9baf8e64de2
+spawn:
+  Location: world;0.47;96.0;0.86;1.66;-5.25
+  Creator: 8fc1cb89-f5ff-404d-abd7-e9baf8e64de2

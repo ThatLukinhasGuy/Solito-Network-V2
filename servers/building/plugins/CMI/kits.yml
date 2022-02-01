@@ -1,0 +1,731 @@
+# Player should have appropriate permission node to use particular kit: cmi.kit.[kitName]
+# cmi.kit.newbie will allow to use newbie kit
+# Possible custom variables: {USERNAME} {DISPLAYNAME} {WORLDNAME} {KITNAME} {RANDOMPLAYER}
+# Edit kits ingame with /cmi kiteditor to avoid formating issues
+
+claim:
+  CommandName: claim
+  Delay: 300
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_SHOVEL
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_SHOVEL
+  Items:
+    '28':
+      v: 2586
+      type: GOLDEN_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Claim
+          Shovel"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Right
+          click 2 corners to claim!"}],"text":""}'
+starter:
+  CommandName: starter
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '28':
+      v: 2586
+      type: STONE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    '29':
+      v: 2586
+      type: STONE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    '30':
+      v: 2586
+      type: STONE_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    '31':
+      v: 2586
+      type: STONE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    '32':
+      v: 2586
+      type: COOKED_MUTTON
+      amount: 32
+    '36':
+      v: 2586
+      type: WRITTEN_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: BOOK_SIGNED
+        title: §6§lRules
+        author: Server
+        pages:
+        - '{"extra":[{"text":"&\t"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"1.
+          no griefing\n2."},{"italic":false,"color":"gold","text":" no spamming\n3."},{"italic":false,"color":"gold","text":"
+          no advertising\n4."},{"italic":false,"color":"gold","text":" no cursing/No
+          Constant cursing\n5."},{"italic":false,"color":"gold","text":" no trolling/flaming\n6."},{"italic":false,"color":"gold","text":"
+          no banned items (tekkit rule)\n7."},{"italic":false,"color":"gold","text":"
+          no asking for op,\nranks, or items\n8."},{"italic":false,"color":"gold","text":"
+          Respect all players\n\n9."},{"italic":false,"color":"gold","text":" obey
+          staff there"}],"text":""}'
+        - '{"extra":[{"text":"Mod/Admin Rules:\n"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"1.
+          Be Responsible with the privileges you are given as a Builder/Mod.\n2."},{"italic":false,"color":"gold","text":"
+          Do not spawn blocks or items for other\nplayers.\n3."},{"italic":false,"color":"gold","text":"
+          When Trading, only buy and sell legit items.\n4. "},{"italic":false,"color":"gold","text":"Only
+          help build for other players using legit items and blocks."}],"text":""}'
+        - '{"extra":[{"text":"Look the website for more "},{"clickEvent":{"action":"open_url","value":"https://solito.nl/rules-english"},"text":"https://solito.nl/rules-english"}],"text":""}'
+        resolved: true
+    Helmet:
+      v: 2586
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 1
+    Chest:
+      v: 2586
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 1
+    Legs:
+      v: 2586
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 1
+    Boots:
+      v: 2586
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          DURABILITY: 1
+potm:
+  CommandName: potm
+  Enabled: false
+  Delay: 1800
+  Items:
+    '28':
+      v: 2586
+      type: IRON_SWORD
+    '29':
+      v: 2586
+      type: BOW
+    '30':
+      v: 2586
+      type: ARROW
+      amount: 64
+    '32':
+      v: 2586
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          MENDING: 1
+    '33':
+      v: 2586
+      type: GOLDEN_APPLE
+      amount: 2
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+Win:
+  CommandName: Win
+  Enabled: false
+  Delay: 235613
+  MaxUsages: 4
+  Slot: 3
+  Items:
+    '3':
+      v: 2586
+      type: FIREWORK_ROCKET
+      amount: 64
+    '5':
+      v: 2586
+      type: FIREWORK_ROCKET
+      amount: 64
+    '7':
+      v: 2586
+      type: FIREWORK_ROCKET
+      amount: 64
+    Chest:
+      v: 2586
+      type: ELYTRA
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+pvp:
+  CommandName: pvp
+  DisplayName: '&cPvP'
+  Enabled: false
+  Delay: 86400
+  Items:
+    '28':
+      v: 2586
+      type: STONE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    '29':
+      v: 2586
+      type: CARROT
+      amount: 10
+    '30':
+      v: 2586
+      type: APPLE
+      amount: 2
+    Helmet:
+      v: 2586
+      type: CHAINMAIL_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    Chest:
+      v: 2586
+      type: CHAINMAIL_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    Legs:
+      v: 2586
+      type: CHAINMAIL_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+    Boots:
+      v: 2586
+      type: CHAINMAIL_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 1
+Dtools:
+  CommandName: Dtools
+  Enabled: false
+  Delay: 10
+New:
+  CommandName: New
+  Enabled: false
+  Delay: 10
+Donator:
+  CommandName: Donator
+  Enabled: false
+  Delay: 10
+  Items:
+    '3':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"DONATOR"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '4':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 16
+    '5':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 16
+    '6':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 16
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"DONATOR"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"DONATOR"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"DONATOR"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"DONATOR"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+Lord:
+  CommandName: Lord
+  Enabled: false
+  Delay: 10
+  Items:
+    '3':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_aqua","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_aqua","text":"LORD"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '4':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 32
+    '5':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 32
+    '6':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 32
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_aqua","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_aqua","text":"LORD"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_aqua","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_aqua","text":"LORD"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_aqua","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_aqua","text":"LORD"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_aqua","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_aqua","text":"LORD"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+Titan:
+  CommandName: Titan
+  Enabled: false
+  Delay: 10
+  Items:
+    '3':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"yellow","text":"TITAN
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '4':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 64
+    '5':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 64
+    '6':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"yellow","text":"TITAN
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"yellow","text":"TITAN
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"yellow","text":"TITAN
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"yellow","text":"TITAN
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+Legacy:
+  CommandName: Legacy
+  Enabled: false
+  Delay: 10
+  Items:
+    '3':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"gray","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"gray","text":"Legacy
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"gray","text":"`"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '4':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 64
+    '5':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 64
+    '6':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '7':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"gray","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"gray","text":"Legacy
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"gray","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"gray","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"gray","text":"Legacy
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"gray","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"gray","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"gray","text":"Legacy
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"gray","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"gray","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"gray","text":"Legacy
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"gray","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+God:
+  CommandName: God
+  Enabled: false
+  Delay: 10
+  Items:
+    '3':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"red","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"red","text":"GOD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"red","text":"`"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '4':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 64
+    '5':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 64
+    '6':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '7':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"red","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"red","text":"GOD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"red","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"red","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"red","text":"GOD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"red","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"red","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"red","text":"GOD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"red","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"red","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"red","text":"GOD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"red","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+Overlord:
+  CommandName: Overlord
+  Enabled: false
+  Delay: 10
+  Items:
+    '2':
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_purple","text":"OVERLORD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          FIRE_ASPECT: 2
+          LOOT_BONUS_MOBS: 3
+          DAMAGE_ALL: 4
+          DURABILITY: 3
+    '3':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '4':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '5':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 64
+    '6':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '7':
+      v: 2586
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 64
+    '13':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 64
+    '14':
+      v: 2586
+      type: DIAMOND_BLOCK
+      amount: 64
+    '15':
+      v: 2586
+      type: GOLD_BLOCK
+      amount: 64
+    Helmet:
+      v: 2586
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_purple","text":"OVERLORD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Chest:
+      v: 2586
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_purple","text":"OVERLORD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Legs:
+      v: 2586
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_purple","text":"OVERLORD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4
+    Boots:
+      v: 2586
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true,"color":"dark_purple","text":"`
+          "},{"bold":true,"italic":false,"obfuscated":false,"color":"dark_purple","text":"OVERLORD
+          "},{"bold":false,"italic":false,"obfuscated":true,"color":"dark_purple","text":"`"}],"text":""}'
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 5
+          DURABILITY: 4

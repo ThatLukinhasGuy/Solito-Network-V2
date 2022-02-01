@@ -1,0 +1,11 @@
+on player join:
+	wait 3 seconds
+	make console execute command "npc select Greeter"
+	make console execute command "npc moveto -136 30 185"
+	make console execute command "pmirror play Greeter"
+	wait 3 second
+	make console execute command "npc skin bart7782"
+	wait 3 second
+	make console execute command "npc skin ComPieter"
+	wait 3 second
+	make console execute command "npc skin Thijmendekok"

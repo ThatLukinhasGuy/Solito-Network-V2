@@ -1,0 +1,139 @@
+# This is the default configuration file of BungeeTabListPlus.
+#
+# Since the configuration of the plugin is quite complex you
+# might want to have a look at the wiki from time to time.
+#
+# Wiki: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki
+#  Placeholders: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Placeholders
+#  Examples: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples
+#
+
+# Configure who can see the tab lists
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/MultipleTablists
+showTo: all
+priority: 1
+
+showHeaderFooter: true
+header:
+- |-
+  &r
+  &e◈ &b&lSolito &f&lNetwork &e◈
+  &r
+
+headerAnimationUpdateInterval: 1.0
+footer:
+- |-
+  &r
+  &7Total players:&f ${playerset:all_players size}
+  &r
+  &fplay.solitomc.nl
+  &r
+  &fBuy a rank? &b/buy&f or &fstore.solitomc.nl
+  &r
+
+footerAnimationUpdateInterval: 1.0
+type: DYNAMIC_SIZE
+
+customPlaceholders:
+  vanish_suffix:
+    !conditional
+    condition: ${player is_hidden}
+    true: "&b/vanish"
+    false: ""
+  afk_tag:
+    !conditional
+    condition: ${player cmi_user_afk} == "§6True"
+    true: "&7|&oaway"
+    false: ""
+  other_server_prefix: # makes players on other servers gray
+    !conditional
+    condition: ${viewer server} == ${player server}
+    true: "&f"
+    false: "&7"
+  colored_ping0:
+    !conditional
+    parameters: 1
+    condition: ${%0 ping} < 50
+    true: "&a${%0 ping}"
+    false: "&e${%0 ping}"
+  colored_ping:
+    !conditional
+    parameters: 1
+    condition: ${%0 ping} < 150
+    true: ${colored_ping0 %0}
+    false: "&c${%0 ping}"
+  viewer_colored_ping0:
+    !conditional
+    condition: ${viewer ping} < 50
+    true: "&a${viewer ping}"
+    false: "&e${viewer ping}"
+  viewer_colored_ping:
+    !conditional
+    condition: ${viewer ping} < 150
+    true: ${viewer_colored_ping0}
+    false: "&c${viewer ping}"
+  custom_prefix:
+    !switch
+    parameters: 1
+    expression: ${%0 vault_primary_group}
+    replacements:
+      "owner": "&f[&4Owner&f]&f "
+      "manager": "&f[&4Manager&f]&f "
+      "co-owner": "&f[&cCo-Owner&f]&f "
+      "developer": "&f[&9Dev&f]&f "
+      "admin-head": "&f[&cAdmin&f]&f "
+      "admin": "&f[&cAdmin&f]&7 "
+      "mod": "&f[&eMod&f]&f "
+      "helper": "&f[&eHelper&f]&7 "
+      "builder-head": "&f[&bBuilder&f]&7 "
+      "builder": "&f[&bB&f]&7&l "
+      "streamer-live": "&f[&5Streamer&f]&7 "
+      "streamer": "&f[&5Streamer&f]&7 "
+      "solito-hyper": "&f[&6&lHYPER&f]&7 "  
+      "youtuber": "&f[&c&lYou&f&lTube&f]&7 "    
+      "solito-legend": "&f[&5&lLEGEND&f]&7 "
+      "solito-hero": "&f[&a&lHERO&f]&7 "
+      "solito-elite": "&f[&d&lETERNAL&f]&7 "
+      "solito-donor": "&f[&A&lDONOR&f]&7 "      
+      "voter": "&f[&5Voter&f]&7 "
+      "default": "&f[&7Member&f]&7 "
+    defaultReplacement: "&f[&7Member&f]&7 "
+  custom_suffix:
+    !switch
+    parameters: 1
+    expression: ${%0 vault_primary_group}
+    replacements:
+      "owner": ""
+      "manager": ""
+      "co-owner": ""
+      "developer": ""
+      "admin-head": " &f[&3Head&f]"
+      "admin": ""
+      "mod": ""
+      "helper": ""
+      "builder-head": " &f[&9Head&f]"
+      "builder": ""
+      "streamer-live": " &f[&a⬤LIVE&f]"
+      "streamer": ""
+      "solito-legend": ""
+      "youtuber": ""
+      "solito-hyper": " &f[&aMONEY!&f]"
+      "solito-hero": ""
+      "solito-elite": ""
+      "solito-donor": ""      
+      "voter": ""
+      "default": ""
+    defaultReplacement: ""
+
+# Hidden players show up on the tab list, avoids glitches
+hiddenPlayers: VISIBLE_TO_ADMINS
+
+playerSets:
+  all_players: all
+  currentserver: ${player server} == ${viewer server}
+
+playerSet: currentserver
+
+playerOrder: "luckpermsbungee_primary_group_weight desc, server asc"
+
+playerComponent: "${custom_prefix player}${player name}${custom_suffix player} ${colored_ping  player}"

@@ -1,0 +1,42 @@
+menu_title: '&8Rules'
+open_command: rulesgui
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.infogui
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+size: 36
+items:
+  'glass_pane_filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: '&r'
+    slots: 
+    - 0-35
+    priority: 100
+
+  'main_rules':
+    material: PAPER
+    slot: 10
+    display_name: '&f&nMain Rules'
+    lore:
+    - '&a(✔) These rules &lDO NOT&r&a apply for Anarchy servers!'
+    - '&c(✘) You are not allowed to use X-Ray'
+    - '&c(✘) Do not troll, harass, cuss at, or attempt to bully players off the server.'
+    - '&c(✘) Do not use an offensive skin, username, or nickname.'
+    - '&c(✘) Do not “Doxx” or reveal private player information.'
+    - '&c(✘) Do not break the Mojang Studios Terms of Services or engage in illegal actions.'
+    - '&c(✘) Do not scam players.'
+    - '&c(✘) Do not invite players to factions just to steal from them.'
+    - '&c(✘) Do not steal whole or parts of builds or names from players or maliciously edit them.'
+
+  'questions_and_help':
+    material: PAPER
+    slot: 16
+    display_name: '&f&nQuestions and Help'
+    lore:
+    - '&b(?) If you have a problem with staff or players, report them on see the links.'
+    - '&b(?) For questions and more rules see the links.'
+    - '&b(?) https://discord.gg/Ju7pEqWcCv'
+    - '&b(?) https://www.solito.nl'

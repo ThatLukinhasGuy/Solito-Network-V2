@@ -1,0 +1,35 @@
+# Example:
+# The following player is exempt from bans, mutes and warnings. True means exempt.
+# uuid-here:
+#  ban: true
+#  tempban: true
+#  mute: true
+#  tempmute: true
+#  warn: true
+#  tempwarn: true
+#  alts: true
+
+7b64e15c-a64b-4132-b7bd-abf5aea6fe15:
+  ban: true
+  tempban: true
+  mute: true
+  tempmute: true
+  warn: true
+  tempwarn: true
+  alts: true
+0f9c7d29-169c-4458-b3c6-397ff24b3114:
+  ban: true
+  tempban: true
+  mute: true
+  tempmute: true
+  warn: true
+  tempwarn: true
+  alts: true
+8fc1cb89-f5ff-404d-abd7-e9baf8e64de2:
+  ban: true
+  tempban: true
+  mute: true
+  tempmute: true
+  warn: true
+  tempwarn: true
+  alts: true

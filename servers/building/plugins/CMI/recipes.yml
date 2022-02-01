@@ -1,0 +1,306 @@
+CRecipes:
+  '0':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: ENDER_PEARL
+      amount: 16
+    Recipe:
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: DIAMOND_BOOTS
+  '1':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: CAMPFIRE
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_PLANKS
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: TORCH
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_PLANKS
+  '2':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: SOUL_CAMPFIRE
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_LOG
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_PLANKS
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: SOUL_TORCH
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: OAK_PLANKS
+  '3':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: DRAGON_HEAD
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: ENDER_PEARL
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BLAZE_ROD
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: ENCHANTED_GOLDEN_APPLE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BLAZE_ROD
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: CLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: DIAMOND_BOOTS
+  '4':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: ENCHANTED_GOLDEN_APPLE
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: GHAST_TEAR
+  '5':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: CHAIN
+      amount: 32
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: IRON_BARS
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: IRON_BARS
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: IRON_BARS
+  '6':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: OBSIDIAN
+      amount: 6
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: CHAIN
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: CHAIN
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: CHAIN
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: CHAIN
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: LAVA_BUCKET
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: WATER_BUCKET
+  '7':
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: LAVA_BUCKET
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: WATER_BUCKET
+    Cook: 6
+    Exp: 0.059999995
+  '8':
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: OBSIDIAN
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: LAVA_BUCKET
+    Cook: 62
+    Exp: 0.0
+  '9':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2865
+      type: CHEST
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Beekit"}],"text":""}'
+        lore:
+        - '{"extra":[{"italic":false,"text":"By BlearMc"}],"text":""}'
+        internal: H4sIAAAAAAAA/43RTWsCQQwG4KzfLrL1AxQ9+Ts8FUsPPetdsrtRB8cZmaSK/75CO84yVfD+5H1DkgKkkC21LQ6fRpRc17jrQE2V8HZUhgqHW1kUe2LpQvNL6MgpAPQSaKy0FUig+WG/jbQezKAy8OeSyA2C02iE3F3WvHz/lcMgLR42rDH3tB7RSvlOI7N3be/m/yIdlSzWkKed12kWtY8DPdkL3fjGodKe96MLVJLRlMRK7smD59TmTO5MztNJtERW2bdSPo0SR4GVik9kOETOnr8qJ9qrM93+/wMX60F1NgIAAA==
+        blockMaterial: CHEST
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2865
+        type: BEEHIVE

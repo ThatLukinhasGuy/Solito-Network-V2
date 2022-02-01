@@ -1,0 +1,32 @@
+# DeluxeMenus 1.13.3-Release main configuration file
+# 
+# A full wiki on how to use this plugin can be found at:
+# https://github.com/help-chat/DeluxeMenus/wiki
+
+debug: false
+check_updates: true
+gui_menus:
+  servergui:
+    file: servergui.yml
+  servergui_2:
+    file: servergui_2.yml
+  servergui_staff:
+    file: servergui_staff.yml
+  gadgetgui:
+    file: gadgetgui.yml
+  info:
+    file: info.yml
+  vote:
+    file: vote.yml
+  rulesgui:
+    file: rulesgui.yml
+  survivalgui:
+    file: survivalgui.yml
+  skyblockgui:
+    file: skyblockgui.yml
+  snapshotgui:
+    file: snapshotgui.yml
+  minigamesgui:
+    file: minigamesgui.yml
+  survivalv4gui:
+    file: survivalv4.yml

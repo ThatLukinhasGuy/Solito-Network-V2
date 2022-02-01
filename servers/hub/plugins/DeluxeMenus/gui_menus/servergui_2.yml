@@ -1,0 +1,155 @@
+menu_title: '&8Servers'
+open_command: servergui_2
+size: 54
+update_interval: 3
+items:
+  'glass_pane_filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: '&r'
+    slots: 
+    - 0-53
+    priority: 100
+
+  'anarchy_server':
+    material: DIAMOND
+    slot: 10
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_10.0.1.11:25501%'
+          output: '&aOnline'
+    display_name: '&8▪ &a&l&oAnarchy &8▪'
+    lore:
+    - '&f%pinger_players_10.0.1.11:25501%&7/&f%pinger_max_10.0.1.11:25501% &7Playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Description:'
+    - '&fNo Rules'
+    - ''
+    - '&cOnly supports ↓'
+    - '&7Server Version: &f%pinger_version_10.0.1.11:25501%'
+    left_click_commands:
+    - '[close]'
+    - '[message] &cPlease connect with anarchy.solitomc.nl in order to play anarchy!'
+  'anarchy_offline':
+    material: BARRIER
+    slot: 10
+    priority: 2
+    display_name: '&8▪ &a&lAnarchy &8▪  &4[Offline]'
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true
+
+  'creative_anarchy_server':
+    material: TNT
+    slot: 13
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_10.0.1.11:25502%'
+          output: '&aOnline'
+    display_name: '&8▪ &f&l&oCreative &a&l&oAnarchy &8▪'
+    lore:
+    - '&f%pinger_players_10.0.1.11:25502%&7/&f%pinger_max_10.0.1.11:25502% &7playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Description:'
+    - '&fNo Rules'
+    - ''
+    - '&cOnly supports ↓'
+    - '&7Server Version: &f%pinger_version_10.0.1.11:25502%'
+    left_click_commands:
+    - '[close]'
+    - '[message] &cPlease connect with anarchy.solitomc.nl in order to play creative anarchy!'
+  'creative_anarchy_offline':
+    material: BARRIER
+    slot: 13
+    priority: 2
+    display_name: '&8▪ &f&l&oCreative &a&lAnarchy &8▪ &4[Offline]'
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true
+
+  'snapshot_server':
+    material: FURNACE
+    slot: 16
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        online:
+          type: string equals ignorecase
+          input: '%pinger_online_172.18.0.1:25502%'
+          output: '&aOnline'
+    display_name: '&8▪ &b&lSnapshot &8▪'
+    lore:
+    - '&f%pinger_players_172.18.0.1:25502%&7/&f%pinger_max_172.18.0.1:25502% &7Playing' #Note: You have to use your server ip:port here!
+    - ''
+    - '&7Description:'
+    - '&fYou can play on here'
+    - '&fwith the latest snapshots'
+    - '&fand check out the latest, '
+    - '&fdevelopments of minecraft'
+    - ''
+    - '&cOnly supports ↓'
+    - '&7Supports: &f%pinger_version_172.18.0.1:25502%'
+    left_click_commands:
+    - '[close]'
+    - '[message] &cPlease connect with snapshot.solitomc.nl in order to play snapshots!'
+  'snapshot_offline':
+    material: BARRIER
+    slot: 16
+    priority: 2
+    display_name: '&8▪ &b&lSnapshot &8▪ &4[Offline]'
+    lore:
+    - '&cThis server is currently offline'
+    - '&cPlease contact a staff-member,'
+    - '&cif this problem still exists after some'
+    - '&ctime'
+    - ''
+    - '&aClick to refresh!'
+    left_click_commands:
+    - '[refresh]'
+    update: true
+
+  'info':
+    material: head-ComPieter
+    slot: 49
+    display_name: '&c&lComing SOON'
+    lore:
+    - '&7&lSkyblock &r&fETA: N/A'
+    - '&7&lMinigames (Redo) &r&fETA: N/A'
+
+  'previous_page':
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 46
+    display_name: '&9<< Previous Page'
+    lore: []
+    left_click_commands:
+    - "[openguimenu] servergui"
+
+  'next_page':
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    slot: 52
+    display_name: '&9Next Page >>'
+    lore: []
+    left_click_commands: 
+    - "[openguimenu] servergui_3"

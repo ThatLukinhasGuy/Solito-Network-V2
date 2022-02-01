@@ -1,0 +1,42 @@
+menu_title: '&8Gadgets'
+open_command: gadgetgui
+size: 27
+items:
+  'glass_pane_filler':
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: '&r'
+    slots: 
+    - 0-26
+    priority: 100
+
+  '1':
+    material: ENDER_CHEST
+    slot: 10
+    display_name: '&7&lCosmetics'
+    lore:
+    - '&c&nDisabled due too an crash issue/being unstable'
+    # left_click_commands:
+    # - '[player] cosmetics menu main'
+    # right_click_commands:
+    # - '[player] cosmetics menu main'
+    
+  '2':
+    material: JUKEBOX
+    slot: 13
+    display_name: '&7&lJukeBox'
+    lore: []
+    left_click_commands:
+    - '[player] gmusic'
+    right_click_commands:
+    - '[player] gmusic'
+    
+  '3':
+    material: BLAZE_POWDER
+    slot: 16
+    display_name: '&7&lSuperTrails'
+    lore:
+    - "&cYou must have a rank to use this! &f(&e/buy&f)"
+    left_click_commands:
+    - '[player] trails'
+    right_click_commands:
+    - '[player] trails'

@@ -1,0 +1,3598 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 63
+npc:
+  '63':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 10000
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: af82cc3a-24a6-4a62-9f58-99b43b226eb2
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 48
+        stats_arrowsFired: 335
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1182
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 199.41120836138725
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 150.47487
+        world: world
+        x: '-11.1214'
+        y: '64.0'
+        z: '12291.3945'
+        yaw: '150.4749'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '62':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: aae60c3f-6e21-4a5b-b4b2-b69b4d7147ad
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 47
+        stats_arrowsFired: 334
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1181
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 182.7421188056469
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 112.48373
+        world: world
+        x: '-10.1797'
+        y: '64.0'
+        z: '12290.1956'
+        yaw: '112.4837'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '61':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: 7e9b38c3-a4d9-41bd-9d00-83a706dd2701
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 46
+        stats_arrowsFired: 329
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1166
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 189.2701185643673
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 98.73176
+        world: world
+        x: '-10.2657'
+        y: '64.0'
+        z: '12289.6305'
+        yaw: '98.7318'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '60':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: c873488e-2c9f-4c39-98d1-8bb6d2611b37
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 45
+        stats_arrowsFired: 322
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1144
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 179.33848211169243
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 58.675186
+        world: world
+        x: '-10.5162'
+        y: '64.0'
+        z: '12288.2279'
+        yaw: '58.6752'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '59':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: e56fdb2e-2d19-45a4-8f8b-27311460ddec
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 44
+        stats_arrowsFired: 321
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1140
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 4.3425255
+        world: world
+        x: '-11.5913'
+        y: '64.0'
+        z: '12286.7054'
+        yaw: '4.3425'
+        pitch: '-10.2212'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '58':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: a70130fa-b5ba-4428-a5eb-16d4a1b4c09a
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 43
+        stats_arrowsFired: 326
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1155
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 175.8650276362896
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -84.086655
+        world: world
+        x: '-16.4066'
+        y: '64.0'
+        z: '12289.0596'
+        yaw: '-84.0867'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '57':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: ea7858d1-433d-4f3b-b026-a494251110ca
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 42
+        stats_arrowsFired: 320
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1141
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 175.8650276362896
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 16.1118
+        world: world
+        x: '-10.3111'
+        y: '64.0'
+        z: '12284.8097'
+        yaw: '16.1118'
+        pitch: '-6.489'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '56':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: 114239a9-5320-491e-a76c-352fa2b3b950
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 41
+        stats_arrowsFired: 320
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1138
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -2.3124511
+        world: world
+        x: '-11.9178'
+        y: '64.0'
+        z: '12285.5571'
+        yaw: '-2.3125'
+        pitch: '-7.7973'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '55':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: f533eff0-ec6d-4dbe-8b2c-1d6bb50ff168
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 40
+        stats_arrowsFired: 318
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1135
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -36.083176
+        world: world
+        x: '-13.2789'
+        y: '64.0'
+        z: '12285.2478'
+        yaw: '-36.0832'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '54':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+      nameplate-visible: 'false'
+    name: '4'
+    uuid: cc1d67c2-57e8-4b17-97ef-c57ad6a3a315
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 39
+        stats_arrowsFired: 319
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1134
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -26.345253
+        world: world
+        x: '-14.4444'
+        y: '64.0'
+        z: '12286.0897'
+        yaw: '-26.3453'
+        pitch: '5.0161'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '53':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 9b72c12f-52b3-4789-b7a5-c72960447e5b
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 38
+        stats_arrowsFired: 321
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1135
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 174.49433228373528
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -47.403774
+        world: world
+        x: '-15.37'
+        y: '64.0'
+        z: '12286.9741'
+        yaw: '-47.4038'
+        pitch: '5.0067'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '52':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 25493c61-6574-489d-a2c5-42abf570936c
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 37
+        stats_arrowsFired: 325
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1147
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 182.67230102419853
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -64.57667
+        world: world
+        x: '-16.1329'
+        y: '64.0'
+        z: '12287.663'
+        yaw: '-64.5767'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '51':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: db7bfba4-cb4b-469f-9b42-157e289f15b3
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 36
+        stats_arrowsFired: 334
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1179
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 186.0061191022396
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -140.95735
+        world: world
+        x: '-15.2204'
+        y: '64.0'
+        z: '12292.5767'
+        yaw: '-140.9574'
+        pitch: '4.9991'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '50':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 4269a696-6a8b-425d-9939-ddd85dfe9080
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 35
+        stats_arrowsFired: 332
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1174
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 196.87927517294884
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -112.13414
+        world: world
+        x: '-16.3603'
+        y: '64.0'
+        z: '12291.1649'
+        yaw: '-112.1341'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '49':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 25d8f767-7721-422b-9238-6a5fc7cb6e2b
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 34
+        stats_arrowsFired: 331
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1172
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 175.8650276362896
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -99.84384
+        world: world
+        x: '-17.4254'
+        y: '64.0'
+        z: '12290.3743'
+        yaw: '-99.8438'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '48':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 8276301a-93e4-4e50-a78c-bd738bde0f2d
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 33
+        stats_arrowsFired: 334
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1180
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 146.11444
+        world: world
+        x: '-10.4387'
+        y: '64.0'
+        z: '12292.085'
+        yaw: '146.1144'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '47':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 554c07ac-63b8-41a3-8fa7-662bc7367bfd
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 32
+        stats_arrowsFired: 328
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1163
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 73.57586
+        world: world
+        x: '-8.2493'
+        y: '64.0'
+        z: '12288.1195'
+        yaw: '73.5759'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '46':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: eb595338-edea-47de-94fb-6b2eeba5e50f
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 31
+        stats_arrowsFired: 327
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1162
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 179.26866433024406
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 67.83763
+        world: world
+        x: '-8.4533'
+        y: '64.0'
+        z: '12287.7512'
+        yaw: '67.8376'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '45':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 9a8adc57-03e1-4990-9fb6-c14168230421
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 30
+        stats_arrowsFired: 322
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1144
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 27.72784
+        world: world
+        x: '-9.4954'
+        y: '64.0'
+        z: '12285.7933'
+        yaw: '27.7278'
+        pitch: '-7.2754'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '44':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 0974cf06-701f-4d4d-9dfd-9cb7cc5ff0bc
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 29
+        stats_arrowsFired: 323
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1145
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 44.900085
+        world: world
+        x: '-9.2132'
+        y: '64.0'
+        z: '12286.2159'
+        yaw: '44.9001'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '43':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: cd753701-a80e-4d0b-a7d2-37475a712381
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 28
+        stats_arrowsFired: 328
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1165
+        stats_damageTaken: 383.3028713464737
+        stats_damageGiven: 175.7952090203762
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 90.068825
+        world: world
+        x: '-9.2206'
+        y: '64.0'
+        z: '12289.3172'
+        yaw: '90.0688'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '42':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 5483c744-245a-47fc-96fe-b44e052ea81c
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 27
+        stats_arrowsFired: 331
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1172
+        stats_damageTaken: 384.2108713388443
+        stats_damageGiven: 182.6723001897335
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 115.0347
+        world: world
+        x: '-9.5786'
+        y: '64.0'
+        z: '12290.5891'
+        yaw: '115.0347'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '41':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 2cdaadf7-63fd-43c3-b483-28dc3c06f5f4
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 26
+        stats_arrowsFired: 335
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1181
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 182.67230102419853
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 151.00323
+        world: world
+        x: '-9.8593'
+        y: '64.0'
+        z: '12293.7218'
+        yaw: '151.0032'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '40':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: f42fd000-90b0-4470-b7ab-ef63d8d4e351
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 25
+        stats_arrowsFired: 333
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1181
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 175.93484541773796
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 152.43686
+        world: world
+        x: '-10.2352'
+        y: '64.0'
+        z: '12293.9549'
+        yaw: '152.4369'
+        pitch: '-0.4372'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,equipment,spawned,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '39':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: b698d033-c459-4bd0-999f-4990f615126c
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 24
+        stats_arrowsFired: 335
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1184
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 175.8650276362896
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: 166.25449
+        world: world
+        x: '-11.6304'
+        y: '64.0'
+        z: '12294.0497'
+        yaw: '166.2545'
+        pitch: '4.4692'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '38':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 1b663975-1391-4e59-822b-6f7cece8fe91
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 23
+        stats_arrowsFired: 334
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1183
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 182.53266379237175
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -159.80289
+        world: world
+        x: '-14.1082'
+        y: '64.0'
+        z: '12293.5433'
+        yaw: '-159.8029'
+        pitch: '4.885'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,spawned,equipment,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '37':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: 6cb516e6-e66c-441a-943d-397cecbcd84c
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 22
+        stats_arrowsFired: 328
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1161
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -81.89282
+        world: world
+        x: '-18.53'
+        y: '64.0'
+        z: '12288.5975'
+        yaw: '-81.8928'
+        pitch: '0.0'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: sneak,owner,type,location,inventory,equipment,spawned,skintrait,scoreboardtrait,dropstrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '28':
+    metadata:
+      cached-skin-uuid-name: god
+      cached-skin-uuid: bc27afd7-6889-4811-97c9-135ee46cdabc
+      respawn-delay: 300
+      protected: false
+    name: '4'
+    uuid: e31e05b2-a300-447f-a9a3-a920bd16822b
+    traits:
+      sneak:
+        sneaking: false
+      sentinel:
+        stats_ticksSpawned: 33703
+        stats_timesSpawned: 21
+        stats_arrowsFired: 319
+        stats_potionsThrow: 0
+        stats_fireballsFired: 0
+        stats_snowballsThrown: 0
+        stats_eggsThrown: 0
+        stats_skullsThrown: 0
+        stats_llamaSpitShot: 0
+        stats_shulkerBulletsShot: 0
+        stats_evokerFangsSpawned: 0
+        stats_pearlsUsed: 0
+        stats_punches: 25
+        stats_attackAttempts: 1137
+        stats_damageTaken: 382.7108713388443
+        stats_damageGiven: 172.46139094233513
+        avoidRange: 10.0
+        range: 20.0
+        damage: -1.0
+        armor: -1.0
+        health: 20.0
+        ranged_chase: false
+        close_chase: true
+        invincible: false
+        fightback: true
+        runaway: false
+        attackRate: 30
+        attackRateRanged: 30
+        healRate: 100
+        guardingUpper: 0
+        guardingLower: 0
+        guardedNPC: -1
+        needsAmmo: false
+        safeShot: true
+        respawnTime: 100
+        chaseRange: 100.0
+        enemyDrops: false
+        enemyTargetTime: 6000
+        speed: 1.5
+        warning_text: ''
+        greeting_text: ''
+        greet_range: 10.0
+        greet_rate: 100
+        autoswitch: false
+        accuracy: 0.0
+        realistic: false
+        ignore_los: false
+        reach: 4.5
+        projectileRange: 100.0
+        guard_distance_minimum: 7.0
+        guard_selection_range: 4.0
+        retain_target: false
+        disable_teleporting: false
+        reaction_slowdown: 0
+        allow_knockback: true
+        death_xp: 0
+        allTargets:
+          targets:
+            '0': PLAYER
+        allIgnores:
+          targets:
+            '0': OWNER
+      dropstrait:
+        drops:
+          '0':
+            chance: 1.0
+            drop:
+              type_namespace: minecraft
+              type_key: diamond_block
+              amount: 1
+              durability: 0
+      type: PLAYER
+      owner:
+        uuid: 7b64e15c-a64b-4132-b7bd-abf5aea6fe15
+      spawned: true
+      inventory:
+        '0':
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        '40':
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+      skintrait:
+        fetchDefaultSkin: true
+        signature: VFl9QUq+lDsIX8faLDhMveNd8eMWBnXvEs2Qie2q8WDWeLx92Oj68nx0TiKRSFAbCKYVBnNWd8jN149ZBH3WHvxKqcqNSQK9g3xSEcNFJ8f3eae3/jqEptuUsfo/Pji2fNan9I9M9i2WcDtcPpqoO3LIZxcJZB+wXmk5elW5DP2qdf2MwHskzlh9b0R1RtKmvaznqQ0FV9r3oa+uKQS8g8EJ98qmMsUjpC/p0MB3NGI4Z7EjvpffQRtog1ET7uZO6MckT2Y12NQgVEIOFyetS7b5Px+UgtPcjF6n5vVs679qnBrjnYL1N+puNLOvC/JrwEOkycO7Scqjh4DCfz3ZN+a9gdv7azV6fEV2X2tkO8+512DA04HqoNdnzkiqZUbmFLlQj49SDS0O4Y3J8T2gX+J9aC9xiOKja5AJFZLSwJZTOwD+QFchfIJ96KTmBmiPbDBGLQ4sATubQVWRhOWDYEfbk4v4PXuTHo5/eggB64Md4fIaxc6Xfg1bOstajwGjAoFx8KHfPTbZsOg5kHJP7vVaVZRWOZwDa8UvjXVL8kTY7VIWsmrcNDZ+4qcwhjh51m6UeDr0kZ4VcRT0GJcjkHQssFq4vHRW7IgFduUREcPBeNuUEWXIjSKpEYZLaEDABkieWNxarPYBBhf9MnmMlHiwT0vdB199LYTSptDjFOU=
+        skinName: god
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY0Mjk2NDk4NjQzMywKICAicHJvZmlsZUlkIiA6ICJiYzI3YWZkNzY4ODk0ODExOTdjOTEzNWVlNDZjZGFiYyIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2QiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMxM2VmMzJmMTU5ZDM3MmZkYjRjNDM2MzkxOTBlNzU4M2U0YmJkNTRhN2Q0MmY0NGVlZWI1OWViNWFiNzI1NiIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTUzY2FjOGI3NzlmZTQxMzgzZTY3NWVlMmI4NjA3MWE3MTY1OGYyMTgwZjU2ZmJjZThhYTMxNWVhNzBlMmVkNiIKICAgIH0KICB9Cn0=
+        updateSkins: false
+      location:
+        bodyYaw: -8.847647
+        world: world
+        x: '-12.6104'
+        y: '64.0'
+        z: '12284.6203'
+        yaw: '-8.8476'
+        pitch: '-6.4516'
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: bow
+          amount: 1
+          durability: 0
+        offhand:
+          type_namespace: minecraft
+          type_key: arrow
+          amount: 1
+          durability: 0
+    traitnames: owner,sneak,type,location,inventory,spawned,equipment,skintrait,dropstrait,scoreboardtrait,sentinel,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

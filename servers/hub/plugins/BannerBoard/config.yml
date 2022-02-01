@@ -1,0 +1,292 @@
+# This is the BannerBoard configuration
+# Make sure to always make a backup of this file before making any changes!
+# Made by BigTeddy98
+# 
+# Every BannerBoard has some internal settings stored in this file.
+# Please do not make any changes to whatever is in the internal section.
+
+lastUsedId: 57
+idrange:
+  startid: 22000
+  amount: 5000
+color_palette: color_palette_v1_16_R1.bc
+skinserver: http://www.skinrender.com:2798/
+skinrender_key: CJ3OS1EHVBQMMLBRRT3190F07
+bannerboards:
+  '5':
+    internal:
+      frames:
+      - spawn_-138.0_28.0_189.0_0.0_0.0
+      - spawn_-138.0_27.0_189.0_0.0_0.0
+      - spawn_-138.0_26.0_189.0_0.0_0.0
+      - spawn_-138.0_25.0_189.0_0.0_0.0
+      - spawn_-137.0_28.0_189.0_0.0_0.0
+      - spawn_-137.0_27.0_189.0_0.0_0.0
+      - spawn_-137.0_26.0_189.0_0.0_0.0
+      - spawn_-137.0_25.0_189.0_0.0_0.0
+      - spawn_-136.0_28.0_189.0_0.0_0.0
+      - spawn_-136.0_27.0_189.0_0.0_0.0
+      - spawn_-136.0_26.0_189.0_0.0_0.0
+      - spawn_-136.0_25.0_189.0_0.0_0.0
+      - spawn_-135.0_28.0_189.0_0.0_0.0
+      - spawn_-135.0_27.0_189.0_0.0_0.0
+      - spawn_-135.0_26.0_189.0_0.0_0.0
+      - spawn_-135.0_25.0_189.0_0.0_0.0
+      - spawn_-134.0_28.0_189.0_0.0_0.0
+      - spawn_-134.0_27.0_189.0_0.0_0.0
+      - spawn_-134.0_26.0_189.0_0.0_0.0
+      - spawn_-134.0_25.0_189.0_0.0_0.0
+      facing: NORTH
+      width: 5
+      height: 4
+      rotation: 0
+    configurable:
+      renderers:
+      - IMAGE -src maxresdefault.png -width 600 -height 5304
+      - SKIN --type SKIN --WIDTH 200 --HEIGHT 200
+      - TEXT -text Hello %name%! -yOffset 200
+  '20':
+    internal:
+      frames:
+      - spawn_-121.0_32.0_158.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src code.png -width 128 -height 128
+  '36':
+    internal:
+      frames:
+      - spawn_-125.0_31.0_157.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '37':
+    internal:
+      frames:
+      - spawn_-123.0_31.0_156.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src server_front.png -width 128 -height 128
+  '38':
+    internal:
+      frames:
+      - spawn_-123.0_32.0_156.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src server_front.png -width 128 -height 128
+  '41':
+    internal:
+      frames:
+      - spawn_-122.0_33.0_161.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '42':
+    internal:
+      frames:
+      - spawn_-123.0_33.0_160.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_front.png -width 128 -height 128
+  '44':
+    internal:
+      frames:
+      - spawn_-122.0_33.0_159.0_0.0_0.0
+      facing: SOUTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '45':
+    internal:
+      frames:
+      - spawn_-122.0_32.0_157.0_0.0_0.0
+      - spawn_-122.0_31.0_157.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 2
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 256
+  '46':
+    internal:
+      frames:
+      - spawn_-122.0_32.0_155.0_0.0_0.0
+      facing: SOUTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '47':
+    internal:
+      frames:
+      - spawn_-123.0_31.0_154.0_0.0_0.0
+      facing: NORTH
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_bottom.png -width 128 -height 128
+  '48':
+    internal:
+      frames:
+      - spawn_-124.0_31.0_153.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '49':
+    internal:
+      frames:
+      - spawn_-124.0_32.0_152.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_front.png -width 128 -height 128
+  '50':
+    internal:
+      frames:
+      - spawn_-123.0_32.0_153.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_top.png -width 128 -height 128
+  '51':
+    internal:
+      frames:
+      - spawn_-123.0_34.0_153.0_0.0_0.0
+      facing: UP
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 128 -height 128
+  '52':
+    internal:
+      frames:
+      - spawn_-122.0_33.0_154.0_0.0_0.0
+      facing: EAST
+      width: 1
+      height: 1
+      rotation: 0
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_bottom.png -width 128 -height 128
+  '53':
+    internal:
+      frames:
+      - spawn_-122.0_33.0_156.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '54':
+    internal:
+      frames:
+      - spawn_-122.0_34.0_160.0_0.0_0.0
+      facing: DOWN
+      width: 1
+      height: 1
+      rotation: 90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src terminal_side.png -width 128 -height 128
+  '56':
+    internal:
+      frames:
+      - spawn_-157.0_29.0_248.0_0.0_0.0
+      - spawn_-157.0_29.0_249.0_0.0_0.0
+      - spawn_-157.0_29.0_250.0_0.0_0.0
+      - spawn_-156.0_29.0_248.0_0.0_0.0
+      - spawn_-156.0_29.0_249.0_0.0_0.0
+      - spawn_-156.0_29.0_250.0_0.0_0.0
+      - spawn_-155.0_29.0_248.0_0.0_0.0
+      - spawn_-155.0_29.0_249.0_0.0_0.0
+      - spawn_-155.0_29.0_250.0_0.0_0.0
+      facing: DOWN
+      width: 3
+      height: 3
+      rotation: 180
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 384 -height 384
+  '57':
+    internal:
+      frames:
+      - spawn_-117.0_29.0_248.0_0.0_0.0
+      - spawn_-117.0_29.0_249.0_0.0_0.0
+      - spawn_-117.0_29.0_250.0_0.0_0.0
+      - spawn_-116.0_29.0_248.0_0.0_0.0
+      - spawn_-116.0_29.0_249.0_0.0_0.0
+      - spawn_-116.0_29.0_250.0_0.0_0.0
+      - spawn_-115.0_29.0_248.0_0.0_0.0
+      - spawn_-115.0_29.0_249.0_0.0_0.0
+      - spawn_-115.0_29.0_250.0_0.0_0.0
+      facing: DOWN
+      width: 3
+      height: 3
+      rotation: -90
+    configurable:
+      renderers:
+      - COLOR -color 0,0,255
+      - IMAGE -src controller_side.png -width 384 -height 384
