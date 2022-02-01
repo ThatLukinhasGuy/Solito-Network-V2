@@ -68,9 +68,9 @@ do
     rsync -av --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh ${USER}@${SRV_IP_LIST[$i]}:${SRV_SRC_LIST[$i]}/* ${SRV_DEST_LIST[$i]}; 
 done
 
-#Sync all scripts
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${DESTDIR}/scripts/linux-srv-01/ #linux-srv-01
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${DESTDIR}/scripts/linux-nas-01/ #linux-nas-01
+#Sync all scripts 
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${DESTDIR}/scripts/linux-srv-01/ #linux-srv-01
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${DESTDIR}/scripts/linux-nas-01/ #linux-nas-01
 
 #Delete empty dirs
 find ${DESTDIR}/servers/*/ -type d -empty -delete

@@ -1,13 +1,13 @@
 #!/usr/bin/bash
 
 #Log File & Paths
-ROOT_PATH="/root/Solito-Network"
+ROOT_PATH="/root/Solito-Network-V2"
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=/root/scripts/logs-github/${DATE}
 
 #SRC/DEST dirs
-SRCDIR_1="/srv/daemon-data/"
+SRCDIR_1="/srv/daemon-data/" #legacy
 SRCDIR_2="/var/lib/pterodactyl/volumes/"
 
 
@@ -40,21 +40,8 @@ git checkout main
 git pull
 
 #Sync all servers
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/waterfall_anarchy/ root@10.0.1.12:${WATERFALL_ANARCHY_UUID}  #waterfall anarchy
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/anarchy/ root@10.0.1.12:${ANARCHY_UUID} #anarchy
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/creative_anarchy/ root@10.0.1.12:${CREATIVE_ANARCHY_UUID} #creative anarchy
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/waterfall/ ${WATERFALL_UUID} #waterfall
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/hub/ ${HUB_UUID} #hub
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/hub_fallback/ ${HUB_FALLBACK_UUID} #hub fallback
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/snapshot/ ${SNAPSHOT_UUID} #snapshot
 rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/development/ ${DEVELOPMENT_UUID} #development
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/building/ ${BUILDING_UUID} #building
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/staff_smp/ ${STAFF_SMP_UUID} #staff smp
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/skyblock/ ${SKYBLOCK_UUID} #skyblock
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/minigames/ ${MINIGAMES_UUID} #minigames
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/survival_v3/ ${SURVIVAL_V3_UUID} #survival v3
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/survival_v4/ ${SURVIVAL_V4_UUID} #survival v4
 
 #Sync all scripts
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/scripts/ubuntu-srv-01/ /root/scripts #ubuntu-srv-01
-#rsync -a --exclude-from=${EXCLUDE_GITHUB} ${ROOT_PATH}/scripts/ubuntu-nas-01/ root@10.0.1.13:/mnt/volume1/NetBackup/scripts #ubuntu-nas-01
+#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/scripts/linux-srv-01/ /root/scripts #linux-srv-01
+#rsync -a --exclude-from=${EXCLUDE_GITHUB} ${ROOT_PATH}/scripts/linux-nas-01/ root@10.0.1.13:/mnt/volume1/NetBackup/scripts #linux-nas-01

@@ -13,9 +13,11 @@
 **/logs
 **/*.jar #Can be removed when .gitignore is verified to not have any paid plugins in the repo. Depends on size.
 !**/plugins/*.jar #Can be removed when .gitignore is verified to not have any paid plugins in the repo.
-**/world
-**/world_nether
-**/world_the_end
+**/world*
+**/spawn*
+**/survival*
+**/dev*
+**/build*
 
 #servers:
 ##proxy

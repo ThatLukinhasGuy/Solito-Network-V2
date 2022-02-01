@@ -1,3 +1,7 @@
-plugins/CoreProtect/database.db
-plugins/Pl3xMap/web/*
-*
+#worlds to be excluded
+
+world*/
+spawn*/
+survival*/
+dev*/
+build*/
