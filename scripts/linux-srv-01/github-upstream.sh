@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 #Log File & Paths
-ROOT_PATH="/root/scripts"
+ROOT_PATH=$(git root)
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/logs-github/${DATE}
@@ -9,7 +9,6 @@ LOG_FILE=${ROOT_PATH}/logs-github/${DATE}
 #SRC/DEST dirs
 SRCDIR_1="/srv/daemon-data" #legacy
 SRCDIR_2="/var/lib/pterodactyl/volumes"
-DESTDIR="/root/Solito-Network-V2"
 
 #Server SRC DIRS
 PROXY_ANARCHY_UUID="${SRCDIR_2}/38041d33-5b50-4dde-962e-95709f1d73be"
@@ -25,17 +24,17 @@ BUILDING_UUID="${SRCDIR_2}/a3273974-c645-4dd8-a5f1-abddfe8dea1d"
 SURVIVAL_V5_UUID="${SRCDIR_2}/98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
 
 #Server DEST DIRS
-PROXY_ANARCHY_DEST="${DESTDIR}/servers/proxy_anarchy/"
-HUB_ANARCHY_DEST="${DESTDIR}/servers/hub_anarchy/"
-ANARCHY_DEST="${DESTDIR}/servers/anarchy/"
-CREATIVE_ANARCHY_DEST="${DESTDIR}/servers/creative_anarchy/"
-CRAZY_ANARCHY_DEST="${DESTDIR}/servers/crazy_anarchy/"
-PROXY_DEST="${DESTDIR}/servers/proxy/"
-HUB_DEST="${DESTDIR}/servers/hub/"
-SNAPSHOT_DEST="${DESTDIR}/servers/snapshot/"
-DEVELOPMENT_DEST="${DESTDIR}/servers/development/"
-BUILDING_DEST="${DESTDIR}/servers/building/"
-SURVIVAL_V5_DEST="${DESTDIR}/servers/survival_v5/"
+PROXY_ANARCHY_DEST="${ROOT_PATH}/servers/proxy_anarchy/"
+HUB_ANARCHY_DEST="${ROOT_PATH}/servers/hub_anarchy/"
+ANARCHY_DEST="${ROOT_PATH}/servers/anarchy/"
+CREATIVE_ANARCHY_DEST="${ROOT_PATH}/servers/creative_anarchy/"
+CRAZY_ANARCHY_DEST="${ROOT_PATH}/servers/crazy_anarchy/"
+PROXY_DEST="${ROOT_PATH}/servers/proxy/"
+HUB_DEST="${ROOT_PATH}/servers/hub/"
+SNAPSHOT_DEST="${ROOT_PATH}/servers/snapshot/"
+DEVELOPMENT_DEST="${ROOT_PATH}/servers/development/"
+BUILDING_DEST="${ROOT_PATH}/servers/building/"
+SURVIVAL_V5_DEST="${ROOT_PATH}/servers/survival_v5/"
 
 IP_NODE_0="10.0.1.10"
 IP_NODE_1="10.0.1.11"
@@ -49,8 +48,8 @@ SRV_IP_LIST=( "${IP_NODE_1}" "${IP_NODE_1}" "${IP_NODE_1}" "${IP_NODE_1}" "${IP_
 
 
 #Include/Exlcude files
-INCLUDE_GITHUB="/root/scripts/include-github.txt"
-EXCLUDE_GITHUB="/root/scripts/exclude-github.txt"
+INCLUDE_GITHUB="${ROOT_PATH}/scripts/include-github.txt"
+EXCLUDE_GITHUB="${ROOT_PATH}/scripts/exclude-github.txt"
 
 
 #Msg for github
@@ -59,21 +58,18 @@ MSG_GIT="Updated Upstream (servers/scripts)"
 #Sync all servers
 exec 1>${LOG_FILE}"github-upstream"${EXTENSION} 2>&1
 
-cd ${DESTDIR}
+cd ${ROOT_PATH}
 
 git pull
 
 for (( i=0; i<${#SRV_IP_LIST[@]}; i++ ));
 do 
-    rsync -av --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh ${USER}@${SRV_IP_LIST[$i]}:${SRV_SRC_LIST[$i]}/* ${SRV_DEST_LIST[$i]}; 
+    rsync -avm --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh ${USER}@${SRV_IP_LIST[$i]}:${SRV_SRC_LIST[$i]}/* ${SRV_DEST_LIST[$i]}; 
 done
 
 #Sync all scripts 
-#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${DESTDIR}/scripts/linux-srv-01/ #linux-srv-01
-#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${DESTDIR}/scripts/linux-nas-01/ #linux-nas-01
-
-#Delete empty dirs
-find ${DESTDIR}/servers/*/ -type d -empty -delete
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${ROOT_PATH}/scripts/linux-srv-01/ #linux-srv-01
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${ROOT_PATH}/scripts/linux-nas-01/ #linux-nas-01
 
 #Add the files to github and upstream them with a commit
 git add -A

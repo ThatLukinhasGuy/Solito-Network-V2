@@ -1,7 +1,9 @@
-#worlds to be excluded
+#folders to be excluded
 
 world*/
 spawn*/
 survival*/
 dev*/
 build*/
+logs/
+libraries/
