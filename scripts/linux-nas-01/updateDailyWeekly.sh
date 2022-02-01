@@ -17,16 +17,15 @@ LOG_FILE=${ROOT_PATH}/logs/${DATE} #/mnt/volume1/NetBackup/logs/2021_07_14_03_10
 
 # Destination Folders
 DESTDIR0=${ROOT_PATH}"/database-backups"
-DESTDIR1=${ROOT_PATH}"/backups/ubuntu-srv-01"
-DESTDIR2=${ROOT_PATH}"/backups/ubuntu-srv-02"
-DESTDIR3=${ROOT_PATH}"/backups/ubuntu-srv-03"
-DESTDIR4=${ROOT_PATH}"/backups/ubuntu-nas-01"
-DESTDIR5=${ROOT_PATH}"/backups/ubuntu-websrv-01"
+DESTDIR1=${ROOT_PATH}"/backups/linux-srv-01"
+DESTDIR2=${ROOT_PATH}"/backups/linux-srv-02"
+DESTDIR3=${ROOT_PATH}"/backups/linux-srv-03"
+DESTDIR4=${ROOT_PATH}"/backups/linux-nas-01"
+DESTDIR5=${ROOT_PATH}"/backups/linux-websrv-01"
 
 #IP's
 IP_SRV_01="10.0.1.10"
 IP_SRV_02="10.0.1.11"
-IP_SRV_03="10.0.1.12"
 IP_NAS_01="10.0.1.13"
 IP_WEBSRV_01="10.0.1.20"
 
@@ -38,8 +37,8 @@ SRCDIR0="/root/backups/databases"
 SRCDIR1="/root/backups" #Unused
 
 # Curl arguments
-URL="https://admin.solitomc.nl/api/client/servers/5f1f5a83/command"
-AUTHORIZATION="Authorization: Bearer PVg762METgAo5eaDn8XFHckbo36lY2rCx0YfBYqEqj4Ve0ev"
+URL="https://panel.compieter.nl/api/client/servers/5f1f5a83/command"
+AUTHORIZATION="Authorization: Bearer TOKEN"
 CONTENT_TYPE='Content-Type: application/json'
 ACCEPT_PT='Accept: Application/vnd.pterodactyl.v1+json'
 PTERODACTYL_SESSION='eyJpdiI6InhIVXp5ZE43WlMxUU1NQ1pyNWRFa1E9PSIsInZhbHVlIjoiQTNpcE9JV3FlcmZ6Ym9vS0dBTmxXMGtST2xyTFJvVEM5NWVWbVFJSnV6S1dwcTVGWHBhZzdjMHpkN0RNdDVkQiIsIm1hYyI6IjAxYTI5NDY1OWMzNDJlZWU2OTc3ZDYxYzIyMzlhZTFiYWY1ZjgwMjAwZjY3MDU4ZDYwMzhjOTRmYjMzNDliN2YifQ%3D%3D'
@@ -78,6 +77,7 @@ function weeklyUpdate {
 	#Sent starting message (Development)
     curl "${URL}" -H "${ACCEPT_PT}" -H "${AUTHORIZATION}" -H "${CONTENT_TYPE}" -X POST -b "${PTERODACTYL_SESSION}" -d "${START_MESSAGE}"
 
+    #In case something go's horribly wrong we dont wanna fill up/remove the wrong folder... 
     cd ${ROOT_PATH}/temp/
 
 	#Archiving all servers
@@ -112,29 +112,29 @@ function dailyUpdate {
 	ssh ${USER}@${IP} "mysqldump --all-databases > ${SRCDIR0}/${DATE}.sql"
 
     echo "*** Backing up to ${DESTDIR1}/incremental/ from ${USER}@${IP_SRV_01}..."
-    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_SRV_01}:/ ${DESTDIR1}/incremental/ #ubuntu-srv-01 --> #ubuntu-nas-01 (Root Backup)
+    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_SRV_01}:/ ${DESTDIR1}/incremental/ #linux-srv-01 --> #linux-nas-01 (Root Backup)
 
 	echo "*** Backing up to ${DESTDIR2}/incremental/ from ${USER}@${IP_SRV_02}..."
-    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_SRV_02}:/ ${DESTDIR2}/incremental/ #ubuntu-srv-02 --> #ubuntu-nas-01 (Root Backup)
+    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_SRV_02}:/ ${DESTDIR2}/incremental/ #linux-srv-02 --> #linux-nas-01 (Root Backup)
 
 	echo "*** Backing up to ${DESTDIR2}/incremental/var/lib/pterodactyl from ${USER}@${IP_SRV_02}..."
-	rsync -axzhHAX --delete -e ssh ${USER}@${IP_SRV_02}:/mnt/raid1/pterodactly/* ${DESTDIR2}/incremental/var/lib/pterodactyl #ubuntu-srv-02 --> #ubuntu-nas-01 (Pterodactyl volume folder Backup)
+	rsync -axzhHAX --delete -e ssh ${USER}@${IP_SRV_02}:/mnt/raid10/pterodactly/* ${DESTDIR2}/incremental/var/lib/pterodactyl #linux-srv-02 --> #linux-nas-01 (Pterodactyl volume folder Backup)
 
 	echo "*** Backing up to ${DESTDIR5}/incremental/ from ${USER}@${IP_WEBSRV_01}..."
-    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_WEBSRV_01}:/ ${DESTDIR5}/incremental/ #ubuntu-websrv-01 --> #ubuntu-nas-01 (Root Backup)
+    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} -e ssh ${USER}@${IP_WEBSRV_01}:/ ${DESTDIR5}/incremental/ #linux-websrv-01 --> #linux-nas-01 (Root Backup)
 
 	echo "*** Backing up to ${DESTDIR4}/incremental/ from /..."
-    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} / ${DESTDIR4}/incremental/ #ubuntu-nas-01 --> #ubuntu-nas-01 (Root Backup)
+    rsync -axzhHAX --delete --delete-excluded --exclude-from=${EXCLUDE_FILE} / ${DESTDIR4}/incremental/ #linux-nas-01 --> #linux-nas-01 (Root Backup)
 
     echo "*** Moving dumped MySQL Databases to ${DESTDIR0} from ${USER}@${IP}..."
-    rsync -r -e ssh ${USER}@${IP}:${SRCDIR0}/* ${DESTDIR0} #ubuntu-srv-01 --> #ubuntu-nas-01 (Databases Backup)
+    rsync -r -e ssh ${USER}@${IP}:${SRCDIR0}/* ${DESTDIR0} #linux-srv-01 --> #linux-nas-01 (Databases Backup)
 
 	#Remove files that aren't needed anymore.
 	echo "*** Cleaning up..."
 	ssh ${USER}@${IP} "rm -rf ${SRCDIR0}/*.sql"
 
     echo "*** Modifying permissions for backup share..."
-	chmod -R 750 ${DESTDIR1}/incremental/srv/daemon-data
+	chmod -R 750 ${DESTDIR1}/incremental/srv/daemon-data #legacy
 	chmod -R 750 ${DESTDIR2}/incremental/var/lib/pterodactyl
 
     echo "*** Finalizing..."

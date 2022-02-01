@@ -33,8 +33,8 @@ hostFolder0="/root/backups/databases"
 hostFolder1="/root/backups"
 
 # Curl args
-url                 = "https://admin.solitomc.nl/api/client/servers/5f1f5a83/command"
-authorization       = "Authorization: Bearer PVg762METgAo5eaDn8XFHckbo36lY2rCx0YfBYqEqj4Ve0ev"
+url                 = "https://panel.compieter.nl/api/client/servers/5f1f5a83/command"
+authorization       = "Authorization: Bearer TOKEN"
 contentType         = "Content-Type: application/json"
 acceptPt            = "Accept: Application/vnd.pterodactyl.v1+json"
 startMessage        = "{ 'command': 'say Making archives started!' }"

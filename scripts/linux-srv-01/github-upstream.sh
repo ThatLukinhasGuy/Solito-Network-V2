@@ -7,26 +7,44 @@ EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/logs-github/${DATE}
 
 #SRC/DEST dirs
-DESTDIR="/root/Solito-Network"
-SRCDIR_1="/srv/daemon-data/"
+SRCDIR_1="/srv/daemon-data/" #legacy
 SRCDIR_2="/var/lib/pterodactyl/volumes/"
+DESTDIR="/root/Solito-Network-V2"
 
+#Server SRC DIRS
+PROXY_ANARCHY_UUID=${SRCDIR_2}"38041d33-5b50-4dde-962e-95709f1d73be"
+HUB_ANARCHY_UUID=${SRCDIR_2}"73056572-85e8-4979-b304-f6c247d0a599"
+ANARCHY_UUID=${SRCDIR_2}"b095d9ae-9446-4019-af77-fa93ccd746d6"
+CREATIVE_ANARCHY_UUID=${SRCDIR_2}"7e094680-db9b-4355-a294-f5644ae6e7eb"
+CRAZY_ANARCHY_UUID=${SRCDIR_2}"49974344-b65f-48cb-9b18-4ee9cbdcb180"
+PROXY_UUID=${SRCDIR_2}"3b371702-92ae-42a9-9f62-feb7410d9a6f"
+HUB_UUID=${SRCDIR_2}"60ebe599-b5fb-448d-8cf8-645200107119"
+SNAPSHOT_UUID=${SRCDIR_2}"a2c86a96-5b1c-41c3-a645-8a698c97a906"
+DEVELOPMENT_UUID=${SRCDIR_2}"6d17e2a1-a4be-4704-824a-e2aa14cadf8b"
+BUILDING_UUID=${SRCDIR_2}"a3273974-c645-4dd8-a5f1-abddfe8dea1d"
+SURVIVAL_V5_UUID=${SRCDIR_2}"98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
 
-#Server DIRS
-WATERFALL_ANARCHY_UUID=${SRCDIR_2}"d5667f3c-854a-4572-9389-975b34fb82d9"
-ANARCHY_UUID=${SRCDIR_2}"7c998380-5960-4a40-ac9c-3c4a04f60273"
-CREATIVE_ANARCHY_UUID=${SRCDIR_2}"c361023e-3611-46a6-84d0-ec226344b733"
-WATERFALL_UUID=${SRCDIR_1}"36294af6-72e0-4b5a-a70f-97bbed5886ce"
-HUB_UUID=${SRCDIR_1}"8a6aaf89-5ec4-4fc1-a9eb-7b6527347531"
-HUB_FALLBACK_UUID=${SRCDIR_1}"e87e16d5-3823-4f7a-990f-b2630d2ab3ba"
-SNAPSHOT_UUID=${SRCDIR_1}"04864553-742d-49ee-8e99-2a19f9d35d58"
-DEVELOPMENT_UUID=${SRCDIR_1}"5f1f5a83-e920-4a78-95a8-4b20be19b250"
-BUILDING_UUID=${SRCDIR_1}"70855261-6812-42dd-8239-0d1af3a8638b"
-STAFF_SMP_UUID=${SRCDIR_1}"4729558f-8069-419d-a32c-c8c681f17a7d"
-SKYBLOCK_UUID=${SRCDIR_1}"05464e89-388e-4dd1-bf64-7b893fc47a8d"
-MINIGAMES_UUID=${SRCDIR_1}"0c5f24d5-0c34-4d84-9c97-333048ee1b69"
-SURVIVAL_V3_UUID=${SRCDIR_1}"27b03e74-e0ee-48f3-ba36-162d7b58fd50"
-SURVIVAL_V4_UUID=${SRCDIR_1}"98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
+#Server DEST DIRS
+PROXY_ANARCHY_DEST="${DESTDIR}/servers/proxy_anarchy/"
+HUB_ANARCHY_DEST="${DESTDIR}/servers/hub_anarchy/"
+ANARCHY_DEST="${DESTDIR}/servers/anarchy/"
+CREATIVE_ANARCHY_DEST="${DESTDIR}/servers/creative_anarchy/"
+CRAZY_ANARCHY_DEST="${DESTDIR}/servers/crazy_anarchy/"
+PROXY_DEST="${DESTDIR}/servers/proxy/"
+HUB_DEST="${DESTDIR}/servers/hub/"
+SNAPSHOT_DEST="${DESTDIR}/servers/snapshot/"
+DEVELOPMENT_DEST="${DESTDIR}/servers/development/"
+BUILDING_DEST="${DESTDIR}/servers/building/"
+SURVIVAL_V5_DEST="${DESTDIR}/servers/survival_v5/"
+
+IP_NODE_0="10.0.1.10"
+IP_NODE_1="10.0.1.11"
+
+#IMPORTANT: ORDER MATTERS!!
+SRV_SRC_LIST="${PROXY_ANARCHY_UUID} ${HUB_ANARCHY_UUID} ${ANARCHY_UUID} ${CREATIVE_ANARCHY_UUID} ${CRAZY_ANARCHY_UUID} ${PROXY_UUID} ${HUB_UUID} ${SNAPSHOT_UUID} ${DEVELOPMENT_UUID} ${BUILDING_UUID} ${SURVIVAL_V5_UUID}"
+SRV_DEST_LIST="${PROXY_ANARCHY_DEST} ${HUB_ANARCHY_DEST} ${ANARCHY_DEST} ${CREATIVE_ANARCHY_DEST} ${CRAZY_ANARCHY_DEST} ${PROXY_DEST} ${HUB_DEST} ${SNAPSHOT_DEST} ${DEVELOPMENT_DEST} ${BUILDING_DEST} ${SURVIVAL_V5_DEST}"
+SRV_IP_LIST="${IP_NODE_1} ${IP_NODE_1} ${IP_NODE_1} ${IP_NODE_1} ${IP_NODE_1} ${IP_NODE_0} ${IP_NODE_0} ${IP_NODE_0} ${IP_NODE_0} ${IP_NODE_0} ${IP_NODE_0}"
+
 
 #Include/Exlcude files
 INCLUDE_GITHUB="/root/scripts/include-github.txt"
@@ -43,24 +61,26 @@ cd ${DESTDIR}
 
 git pull
 
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${WATERFALL_ANARCHY_UUID}/* ${DESTDIR}/servers/waterfall_anarchy/ #waterfall anarchy
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${ANARCHY_UUID}/* ${DESTDIR}/servers/anarchy/ #anarchy
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${CREATIVE_ANARCHY_UUID}/* ${DESTDIR}/servers/creative_anarchy/ #creative anarchy
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${WATERFALL_UUID}/* ${DESTDIR}/servers/waterfall/ #waterfall
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${HUB_UUID}/* ${DESTDIR}/servers/hub/ #hub
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${HUB_FALLBACK_UUID}/* ${DESTDIR}/servers/hub_fallback/ #hub fallback
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SNAPSHOT_UUID}/* ${DESTDIR}/servers/snapshot/ #snapshot
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${DEVELOPMENT_UUID}/* ${DESTDIR}/servers/development/ #development
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${BUILDING_UUID}/* ${DESTDIR}/servers/building/ #building
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${STAFF_SMP_UUID}/* ${DESTDIR}/servers/staff_smp/ #staff smp
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SKYBLOCK_UUID}/* ${DESTDIR}/servers/skyblock/ #skyblock
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${MINIGAMES_UUID}/* ${DESTDIR}/servers/minigames/ #minigames
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SURVIVAL_V3_UUID}/* ${DESTDIR}/servers/survival_v3/ #survival v3
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SURVIVAL_V4_UUID}/* ${DESTDIR}/servers/survival_v4/ #survival v4
+for ((i=0; i<${#SRV_SRC_LIST[@]}; i++)); do rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@${SRV_IP_LIST[$i]}:${SRV_SRC_LIST[$i]}/* ${SRV_DEST_LIST[$i]}; done
+
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${PROXY_ANARCHY_UUID}/* ${DESTDIR}/servers/proxy_anarchy/ #proxy anarchy
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${ANARCHY_UUID}/* ${DESTDIR}/servers/anarchy/ #anarchy
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.11:${CREATIVE_ANARCHY_UUID}/* ${DESTDIR}/servers/creative_anarchy/ #creative anarchy
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${PROXY_UUID}/* ${DESTDIR}/servers/proxy/ #proxy
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${HUB_UUID}/* ${DESTDIR}/servers/hub/ #hub
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${HUB_FALLBACK_UUID}/* ${DESTDIR}/servers/hub_fallback/ #hub fallback
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SNAPSHOT_UUID}/* ${DESTDIR}/servers/snapshot/ #snapshot
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${DEVELOPMENT_UUID}/* ${DESTDIR}/servers/development/ #development
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${BUILDING_UUID}/* ${DESTDIR}/servers/building/ #building
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${STAFF_SMP_UUID}/* ${DESTDIR}/servers/staff_smp/ #staff smp
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SKYBLOCK_UUID}/* ${DESTDIR}/servers/skyblock/ #skyblock
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${MINIGAMES_UUID}/* ${DESTDIR}/servers/minigames/ #minigames
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SURVIVAL_V3_UUID}/* ${DESTDIR}/servers/survival_v3/ #survival v3
+#rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded ${SURVIVAL_V4_UUID}/* ${DESTDIR}/servers/survival_v4/ #survival v4
 
 #Sync all scripts
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${DESTDIR}/scripts/ubuntu-srv-01/ #ubuntu-srv-01
-rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${DESTDIR}/scripts/ubuntu-nas-01/ #ubuntu-nas-01
+rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded /root/scripts/* ${DESTDIR}/scripts/linux-srv-01/ #linux-srv-01
+rsync -a --include-from=${INCLUDE_GITHUB} --exclude-from=${EXCLUDE_GITHUB} --delete --delete-excluded -e ssh root@10.0.1.13:/mnt/volume1/NetBackup/scripts/* ${DESTDIR}/scripts/linux-nas-01/ #linux-nas-01
 
 #Delete empty dirs
 find ${DESTDIR}/servers/*/ -type d -empty -delete
