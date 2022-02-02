@@ -2,7 +2,7 @@
 
 #Log File & Paths
 ROOT_PATH=$(git root)
-HOSTNAME=$(hostname)
+HOSTNAME=$HOSTNAME
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/scripts/${HOSTNAME}/logs-github/${DATE}
