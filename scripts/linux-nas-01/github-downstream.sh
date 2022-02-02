@@ -14,21 +14,41 @@ SRCDIR_1="/srv/daemon-data/" #legacy
 SRCDIR_2="/var/lib/pterodactyl/volumes/"
 
 
-#Server DIRS
-WATERFALL_ANARCHY_UUID=${SRCDIR_2}"d5667f3c-854a-4572-9389-975b34fb82d9"
-ANARCHY_UUID=${SRCDIR_2}"7c998380-5960-4a40-ac9c-3c4a04f60273"
-CREATIVE_ANARCHY_UUID=${SRCDIR_2}"c361023e-3611-46a6-84d0-ec226344b733"
-WATERFALL_UUID=${SRCDIR_1}"36294af6-72e0-4b5a-a70f-97bbed5886ce"
-HUB_UUID=${SRCDIR_1}"8a6aaf89-5ec4-4fc1-a9eb-7b6527347531"
-HUB_FALLBACK_UUID=${SRCDIR_1}"e87e16d5-3823-4f7a-990f-b2630d2ab3ba"
-SNAPSHOT_UUID=${SRCDIR_1}"04864553-742d-49ee-8e99-2a19f9d35d58"
-DEVELOPMENT_UUID=${SRCDIR_1}"5f1f5a83-e920-4a78-95a8-4b20be19b250"
-BUILDING_UUID=${SRCDIR_1}"70855261-6812-42dd-8239-0d1af3a8638b"
-STAFF_SMP_UUID=${SRCDIR_1}"4729558f-8069-419d-a32c-c8c681f17a7d"
-SKYBLOCK_UUID=${SRCDIR_1}"05464e89-388e-4dd1-bf64-7b893fc47a8d"
-MINIGAMES_UUID=${SRCDIR_1}"0c5f24d5-0c34-4d84-9c97-333048ee1b69"
-SURVIVAL_V3_UUID=${SRCDIR_1}"27b03e74-e0ee-48f3-ba36-162d7b58fd50"
-SURVIVAL_V4_UUID=${SRCDIR_1}"98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
+#Server SRC DIRS
+PROXY_ANARCHY_UUID="${SRCDIR_2}/38041d33-5b50-4dde-962e-95709f1d73be"
+HUB_ANARCHY_UUID="${SRCDIR_2}/73056572-85e8-4979-b304-f6c247d0a599"
+ANARCHY_UUID="${SRCDIR_2}/b095d9ae-9446-4019-af77-fa93ccd746d6"
+CREATIVE_ANARCHY_UUID="${SRCDIR_2}/7e094680-db9b-4355-a294-f5644ae6e7eb"
+CRAZY_ANARCHY_UUID="${SRCDIR_2}/49974344-b65f-48cb-9b18-4ee9cbdcb180"
+PROXY_UUID="${SRCDIR_2}/3b371702-92ae-42a9-9f62-feb7410d9a6f"
+HUB_UUID="${SRCDIR_2}/60ebe599-b5fb-448d-8cf8-645200107119"
+SNAPSHOT_UUID="${SRCDIR_2}/a2c86a96-5b1c-41c3-a645-8a698c97a906"
+DEVELOPMENT_UUID="${SRCDIR_2}/6d17e2a1-a4be-4704-824a-e2aa14cadf8b"
+BUILDING_UUID="${SRCDIR_2}/a3273974-c645-4dd8-a5f1-abddfe8dea1d"
+SURVIVAL_V5_UUID="${SRCDIR_2}/98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
+
+#Server DEST DIRS
+PROXY_ANARCHY_DEST="${ROOT_PATH}/servers/proxy_anarchy/"
+HUB_ANARCHY_DEST="${ROOT_PATH}/servers/hub_anarchy/"
+ANARCHY_DEST="${ROOT_PATH}/servers/anarchy/"
+CREATIVE_ANARCHY_DEST="${ROOT_PATH}/servers/creative_anarchy/"
+CRAZY_ANARCHY_DEST="${ROOT_PATH}/servers/crazy_anarchy/"
+PROXY_DEST="${ROOT_PATH}/servers/proxy/"
+HUB_DEST="${ROOT_PATH}/servers/hub/"
+SNAPSHOT_DEST="${ROOT_PATH}/servers/snapshot/"
+DEVELOPMENT_DEST="${ROOT_PATH}/servers/development/"
+BUILDING_DEST="${ROOT_PATH}/servers/building/"
+SURVIVAL_V5_DEST="${ROOT_PATH}/servers/survival_v5/"
+
+IP_NODE_0="10.0.1.10"
+IP_NODE_1="10.0.1.11"
+
+USER="root"
+
+#IMPORTANT: ORDER MATTERS!!
+SRV_SRC_LIST=( "${PROXY_ANARCHY_UUID}" )
+SRV_DEST_LIST=( "${PROXY_ANARCHY_DEST}" )
+SRV_IP_LIST=( "${IP_NODE_1}" )
 
 #Include/Exlcude files
 INCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/include-github.txt"
@@ -36,15 +56,14 @@ EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/exclude-github.txt"
 
 cd ${ROOT_PATH}
 
-exec 1>${LOG_FILE}"weekly"${EXTENSION} 2>&1
+exec 1>${LOG_FILE}"github-downstream"${EXTENSION} 2>&1
 
 #Make sure source is updated
 git checkout main
 git pull
 
 #Sync all servers
-rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/servers/development/ ${DEVELOPMENT_UUID} #development
-
-#Sync all scripts
-#rsync -a --include-from=${INCLUDE_GITHUB} ${ROOT_PATH}/scripts/linux-srv-01/ /root/scripts #linux-srv-01
-#rsync -a --exclude-from=${EXCLUDE_GITHUB} ${ROOT_PATH}/scripts/linux-nas-01/ root@10.0.1.13:/mnt/volume1/NetBackup/scripts #linux-nas-01
+for (( i=0; i<${#SRV_IP_LIST[@]}; i++ ));
+do 
+    rsync -av --include-from=${INCLUDE_GITHUB} -e ssh ${USER}@${SRV_IP_LIST[$i]}:${SRV_DEST_LIST[$i]}/* ${SRV_SRC_LIST[$i]}; 
+done

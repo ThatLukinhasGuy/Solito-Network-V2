@@ -54,7 +54,7 @@ EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/exclude-github.txt"
 
 
 #Msg for github
-MSG_GIT="Updated Upstream (servers/scripts)"
+MSG_GIT="Updated Upstream (servers)"
 
 #Sync all servers
 exec 1>${LOG_FILE}"github-upstream"${EXTENSION} 2>&1
