@@ -37,5 +37,5 @@ exec 1>${LOG_FILE}"log-remover"${EXTENSION} 2>&1
 
 for (( i=0; i<${#SRV_IP_LIST[@]}; i++ ));
 do 
-    ssh ${USER}@${SRV_IP_LIST[$i]} "rm -rf ${PROXY_ANARCHY_UUID[$i]}/logs/*.log.gz"; 
+    ssh ${USER}@${SRV_IP_LIST[$i]} "rm -rfv ${SRV_SRC_LIST[$i]}/logs/*.log.gz";
 done
