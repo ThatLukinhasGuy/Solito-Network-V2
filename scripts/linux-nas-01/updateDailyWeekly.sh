@@ -11,7 +11,7 @@
 
 #Log File & Paths
 ROOT_PATH="/mnt/volume1/NetBackup"
-HOSTNAME=$(hostname)
+HOSTNAME=$HOSTNAME
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/logs/${DATE} #/mnt/volume1/NetBackup/logs/2021_07_14_03_10_PM_
@@ -61,7 +61,7 @@ IP="10.0.1.10"
 
 function weeklyUpdate {
     echo "*** Weekly Update ***"
-	echo "*** Run time: $(date) @ $(hostname)"
+	echo "*** Run time: ${DATE} @ ${HOSTNAME}"
 
     #Todo: Also output to console while logging for debbuging purposes.
 	exec 1>${LOG_FILE}"weekly"${EXTENSION} 2>&1
@@ -95,7 +95,7 @@ function weeklyUpdate {
 
 function dailyUpdate {
 	echo "*** Daily Update ***"
-	echo "*** Run time: $(date) @ $(hostname)"
+	echo "*** Run time: ${DATE} @ ${HOSTNAME}"
 
     #Todo: Also output to console while logging for debbuging purposes.
     exec 1>${LOG_FILE}"daily"${EXTENSION} 2>&1

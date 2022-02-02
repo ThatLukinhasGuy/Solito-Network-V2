@@ -4,10 +4,10 @@
 
 #Log File & Paths
 ROOT_PATH=$(git root)
-HOSTNAME=$(hostname)
+HOSTNAME=$HOSTNAME
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
-LOG_FILE=${ROOT_PATH}/scripts/${hostname}/logs-github/${DATE}
+LOG_FILE=${ROOT_PATH}/scripts/${HOSTNAME}/logs-github/${DATE}
 
 #SRC/DEST dirs
 SRCDIR_1="/srv/daemon-data/" #legacy
@@ -31,8 +31,8 @@ SURVIVAL_V3_UUID=${SRCDIR_1}"27b03e74-e0ee-48f3-ba36-162d7b58fd50"
 SURVIVAL_V4_UUID=${SRCDIR_1}"98b1d421-bf8a-42ce-8aef-fa65ed2396ba"
 
 #Include/Exlcude files
-INCLUDE_GITHUB="${ROOT_PATH}/scripts/${hostname}/include-github.txt"
-EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${hostname}/exclude-github.txt"
+INCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/include-github.txt"
+EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/exclude-github.txt"
 
 cd ${ROOT_PATH}
 
