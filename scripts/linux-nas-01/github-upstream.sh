@@ -5,7 +5,7 @@ ROOT_PATH=$(git root)
 HOSTNAME=$(hostname)
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
-LOG_FILE=${ROOT_PATH}/scripts/${hostname}/logs-github/${DATE}
+LOG_FILE=${ROOT_PATH}/scripts/${HOSTNAME}/logs-github/${DATE}
 
 #SRC/DEST dirs
 SRCDIR_1="/srv/daemon-data" #legacy
@@ -49,8 +49,8 @@ SRV_IP_LIST=( "${IP_NODE_1}" "${IP_NODE_1}" "${IP_NODE_1}" "${IP_NODE_1}" "${IP_
 
 
 #Include/Exlcude files
-INCLUDE_GITHUB="${ROOT_PATH}/scripts/${hostname}/include-github.txt"
-EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${hostname}/exclude-github.txt"
+INCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/include-github.txt"
+EXCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/exclude-github.txt"
 
 
 #Msg for github
