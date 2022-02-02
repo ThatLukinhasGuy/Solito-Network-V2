@@ -11,10 +11,12 @@
 
 #Log File & Paths
 ROOT_PATH="/mnt/volume1/NetBackup"
+GITHUB_ROOT_PATH=$(git root)
 HOSTNAME=$HOSTNAME
 DATE=$(date +'%Y_%m_%d_%I_%M_%p_')
 EXTENSION=".log"
 LOG_FILE=${ROOT_PATH}/logs/${DATE} #/mnt/volume1/NetBackup/logs/2021_07_14_03_10_PM_
+AUTH_FILE=${GITHUB_ROOT_PATH}/scripts/${HOSTNAME}/.auth
 
 # Destination Folders
 DESTDIR0=${ROOT_PATH}"/database-backups"
@@ -39,7 +41,7 @@ SRCDIR1="/root/backups" #Unused
 
 # Curl arguments
 URL="https://panel.compieter.nl/api/client/servers/5f1f5a83/command"
-AUTHORIZATION="Authorization: Bearer TOKEN"
+AUTHORIZATION="Authorization: Bearer ${AUTH_FILE}"
 CONTENT_TYPE='Content-Type: application/json'
 ACCEPT_PT='Accept: Application/vnd.pterodactyl.v1+json'
 PTERODACTYL_SESSION='eyJpdiI6InhIVXp5ZE43WlMxUU1NQ1pyNWRFa1E9PSIsInZhbHVlIjoiQTNpcE9JV3FlcmZ6Ym9vS0dBTmxXMGtST2xyTFJvVEM5NWVWbVFJSnV6S1dwcTVGWHBhZzdjMHpkN0RNdDVkQiIsIm1hYyI6IjAxYTI5NDY1OWMzNDJlZWU2OTc3ZDYxYzIyMzlhZTFiYWY1ZjgwMjAwZjY3MDU4ZDYwMzhjOTRmYjMzNDliN2YifQ%3D%3D'
