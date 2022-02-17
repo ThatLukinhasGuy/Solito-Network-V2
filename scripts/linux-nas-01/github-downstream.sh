@@ -46,9 +46,9 @@ IP_NODE_1="10.0.1.11"
 USER="root"
 
 #IMPORTANT: ORDER MATTERS!!
-SRV_SRC_LIST=( "${PROXY_ANARCHY_UUID}" )
-SRV_DEST_LIST=( "${PROXY_ANARCHY_DEST}" )
-SRV_IP_LIST=( "${IP_NODE_1}" )
+SRV_SRC_LIST=( "${DEVELOPMENT_UUID}" )
+SRV_DEST_LIST=( "${DEVELOPMENT_DEST}" )
+SRV_IP_LIST=( "${IP_NODE_0}" )
 
 #Include/Exlcude files
 INCLUDE_GITHUB="${ROOT_PATH}/scripts/${HOSTNAME}/include-github.txt"
@@ -65,5 +65,5 @@ git pull
 #Sync all servers
 for (( i=0; i<${#SRV_IP_LIST[@]}; i++ ));
 do 
-    rsync -av --include-from=${INCLUDE_GITHUB} -e ssh ${USER}@${SRV_IP_LIST[$i]}:${SRV_DEST_LIST[$i]}/* ${SRV_SRC_LIST[$i]}; 
+    rsync -av --delete --existing -e ssh ${SRV_DEST_LIST[$i]}/* ${USER}@${SRV_IP_LIST[$i]}:${SRV_SRC_LIST[$i]};
 done
